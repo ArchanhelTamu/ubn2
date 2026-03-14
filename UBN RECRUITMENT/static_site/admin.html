@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Ultimate Baby Nurses</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e5f8a 0%, #3b9ec9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-container h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: var(--color-primary);
+            text-align: center;
+        }
+
+        .login-container p {
+            text-align: center;
+            color: var(--color-text-light);
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .admin-dashboard {
+            display: none;
+            background: #f8fafc;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .admin-dashboard.active {
+            display: block;
+        }
+
+        .admin-header {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-header h1 {
+            font-size: 24px;
+            color: var(--color-primary);
+            margin: 0;
+        }
+
+        .logout-btn {
+            background: var(--color-error);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        .admin-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .error-message {
+            color: var(--color-error);
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .success-message {
+            color: var(--color-success);
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Form -->
+    <div class="login-container" id="loginContainer">
+        <h1>🔐 Admin Panel</h1>
+        <p>Secure Access Only</p>
+        <form class="login-form" onsubmit="handleLogin(event)">
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="adminPassword" placeholder="Enter admin password" required>
+            </div>
+            <button type="submit" class="btn btn-accent" style="width: 100%;">Login</button>
+            <div id="loginError"></div>
+        </form>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="admin-dashboard" id="adminDashboard">
+        <div class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <button class="logout-btn" onclick="handleLogout()">Logout</button>
+        </div>
+
+        <div class="admin-content">
+            <!-- Stats -->
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalCandidates">0</div>
+                    <div class="stat-label">Total Candidates</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalEmployers">0</div>
+                    <div class="stat-label">Total Employers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalInquiries">0</div>
+                    <div class="stat-label">Total Inquiries</div>
+                </div>
+            </div>
+
+            <!-- Admin Tabs -->
+            <div style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                <div class="admin-tabs">
+                    <button class="admin-tab active" onclick="switchAdminTab('candidates')">Candidates</button>
+                    <button class="admin-tab" onclick="switchAdminTab('employers')">Employers</button>
+                    <button class="admin-tab" onclick="switchAdminTab('inquiries')">Contact Inquiries</button>
+                </div>
+
+                <!-- Filters -->
+                <div class="admin-filters">
+                    <input type="text" id="searchFilter" placeholder="Search by name or email..." onkeyup="filterAdminData()">
+                    <select id="statusFilter" onchange="filterAdminData()">
+                        <option value="">All Status</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Reviewed">Reviewed</option>
+                        <option value="Shortlisted">Shortlisted</option>
+                    </select>
+                    <button class="btn btn-outline" onclick="exportTableToCSV()">📥 Export CSV</button>
+                </div>
+
+                <!-- Table -->
+                <div class="table-container">
+                    <table id="adminTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Type</th>
+                                <th>Details</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="adminTableBody">
+                            <tr>
+                                <td colspan="7" style="text-align: center; padding: 40px; color: var(--color-text-light);">
+                                    No records yet.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Admin password - CHANGE THIS TO YOUR SECURE PASSWORD
+        const ADMIN_PASSWORD = 'admin123';
+
+        // Initialize admin page
+        window.addEventListener('DOMContentLoaded', () => {
+            if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+                showDashboard();
+                loadAllData();
+            }
+        });
+
+        function handleLogin(event) {
+            event.preventDefault();
+            const password = document.getElementById('adminPassword').value;
+
+            if (password === ADMIN_PASSWORD) {
+                sessionStorage.setItem('adminLoggedIn', 'true');
+                document.getElementById('loginError').innerHTML = '';
+                showDashboard();
+                loadAllData();
+            } else {
+                document.getElementById('loginError').innerHTML = '<div class="error-message">Invalid password</div>';
+                document.getElementById('adminPassword').value = '';
+            }
+        }
+
+        function handleLogout() {
+            sessionStorage.removeItem('adminLoggedIn');
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('loginError').innerHTML = '';
+            document.getElementById('loginContainer').style.display = 'block';
+            document.getElementById('adminDashboard').classList.remove('active');
+        }
+
+        function showDashboard() {
+            document.getElementById('loginContainer').style.display = 'none';
+            document.getElementById('adminDashboard').classList.add('active');
+        }
+
+        function loadAllData() {
+            const candidates = JSON.parse(localStorage.getItem('candidates')) || [];
+            const employers = JSON.parse(localStorage.getItem('employers')) || [];
+            const inquiries = JSON.parse(localStorage.getItem('inquiries')) || [];
+
+            document.getElementById('totalCandidates').textContent = candidates.length;
+            document.getElementById('totalEmployers').textContent = employers.length;
+            document.getElementById('totalInquiries').textContent = inquiries.length;
+
+            switchAdminTab('candidates');
+        }
+
+        let currentTab = 'candidates';
+
+        function switchAdminTab(tab) {
+            currentTab = tab;
+            
+            // Update active tab button
+            document.querySelectorAll('.admin-tab').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            filterAdminData();
+        }
+
+        function filterAdminData() {
+            const searchTerm = document.getElementById('searchFilter').value.toLowerCase();
+            const statusFilter = document.getElementById('statusFilter').value;
+            
+            let data = [];
+            if (currentTab === 'candidates') {
+                data = JSON.parse(localStorage.getItem('candidates')) || [];
+            } else if (currentTab === 'employers') {
+                data = JSON.parse(localStorage.getItem('employers')) || [];
+            } else if (currentTab === 'inquiries') {
+                data = JSON.parse(localStorage.getItem('inquiries')) || [];
+            }
+
+            const filtered = data.filter(item => {
+                const matchesSearch = !searchTerm || 
+                    item.fullName?.toLowerCase().includes(searchTerm) ||
+                    item.companyName?.toLowerCase().includes(searchTerm) ||
+                    item.email?.toLowerCase().includes(searchTerm) ||
+                    item.name?.toLowerCase().includes(searchTerm);
+                
+                const matchesStatus = !statusFilter || item.status === statusFilter;
+                
+                return matchesSearch && matchesStatus;
+            });
+
+            displayTableData(filtered, currentTab);
+        }
+
+        function displayTableData(data, type) {
+            const tbody = document.getElementById('adminTableBody');
+            
+            if (data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 40px; color: var(--color-text-light);">No records found.</td></tr>';
+                return;
+            }
+
+            let html = '';
+            data.forEach((item, index) => {
+                const date = new Date(item.date || item.timestamp).toLocaleDateString();
+                const name = item.fullName || item.companyName || item.name || 'N/A';
+                const email = item.email || 'N/A';
+                const status = item.status || 'Pending';
+                
+                let details = '';
+                if (type === 'candidates') {
+                    details = `${item.profession || 'N/A'} | ${item.experience || 'N/A'}`;
+                } else if (type === 'employers') {
+                    details = `${item.staffCount || 'N/A'} positions | ${item.roleRequired || 'N/A'}`;
+                } else {
+                    details = item.subject || 'N/A';
+                }
+
+                html += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${name}</td>
+                        <td>${email}</td>
+                        <td>${type}</td>
+                        <td>${details}</td>
+                        <td>${date}</td>
+                        <td>
+                            <div style="display: flex; gap: 5px;">
+                                <button class="btn btn-small btn-accent" style="font-size: 11px;" onclick="updateStatus('${index}', '${type}')">Update</button>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            });
+
+            tbody.innerHTML = html;
+        }
+
+        function updateStatus(index, type) {
+            const newStatus = prompt('Update status (Pending, Reviewed, Shortlisted):', 'Pending');
+            
+            if (newStatus && ['Pending', 'Reviewed', 'Shortlisted'].includes(newStatus)) {
+                const key = type === 'candidates' ? 'candidates' : type === 'employers' ? 'employers' : 'inquiries';
+                const data = JSON.parse(localStorage.getItem(key)) || [];
+                
+                if (data[index]) {
+                    data[index].status = newStatus;
+                    localStorage.setItem(key, JSON.stringify(data));
+                    filterAdminData();
+                    alert('Status updated successfully!');
+                }
+            }
+        }
+
+        function exportTableToCSV() {
+            let data = [];
+            if (currentTab === 'candidates') {
+                data = JSON.parse(localStorage.getItem('candidates')) || [];
+            } else if (currentTab === 'employers') {
+                data = JSON.parse(localStorage.getItem('employers')) || [];
+            } else if (currentTab === 'inquiries') {
+                data = JSON.parse(localStorage.getItem('inquiries')) || [];
+            }
+
+            if (data.length === 0) {
+                alert('No data to export');
+                return;
+            }
+
+            const headers = Object.keys(data[0]);
+            const csv = [
+                headers.join(','),
+                ...data.map(row => headers.map(header => {
+                    const value = row[header];
+                    return typeof value === 'string' ? `"${value.replace(/"/g, '""')}"` : value;
+                }).join(','))
+            ].join('\n');
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${currentTab}-${new Date().toISOString().split('T')[0]}.csv`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

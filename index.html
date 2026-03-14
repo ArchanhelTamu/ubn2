@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Baby Nurses - Healthcare Staffing Solutions</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="UBN Logo" title="Ultimate Baby Nurses">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a class="nav-link active" onclick="navigateTo('home')">Home</a></li>
+                <li><a class="nav-link" onclick="navigateTo('about')">About</a></li>
+                <li><a class="nav-link" onclick="navigateTo('candidates')">Candidates</a></li>
+                <li><a class="nav-link" onclick="navigateTo('candidate-portal')">Portal</a></li>
+                <li><a class="nav-link" onclick="navigateTo('employers')">Employers</a></li>
+                <li><a class="nav-link" onclick="navigateTo('medical-travel')">Medical Travel</a></li>
+                <li><a class="nav-link" onclick="navigateTo('professional-development')">Professional Development</a></li>
+                <li><a class="nav-link" onclick="navigateTo('resources')">Resources</a></li>
+                <li><a class="nav-link" onclick="navigateTo('faqs')">FAQs</a></li>
+                <li><a class="nav-link" onclick="navigateTo('contact')">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="app">
+        <!-- HOME PAGE -->
+        <div id="page-home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Connecting Skilled Healthcare Professionals with Global Opportunities</h1>
+                    <p>Ultimate Baby Nurses: Your Gateway to Rewarding Healthcare Careers</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="navigateTo('candidates')">Register as Candidate</button>
+                        <button class="btn btn-secondary" onclick="navigateTo('employers')">Post a Job</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="section">
+                <div class="grid-4">
+                    <div class="card">
+                        <div class="card-icon">👥</div>
+                        <h3 style="font-size: 28px; color: var(--color-accent);">800+</h3>
+                        <p style="color: var(--color-text-light);">Healthcare Professionals</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏥</div>
+                        <h3 style="font-size: 28px; color: var(--color-accent);">70+</h3>
+                        <p style="color: var(--color-text-light);">Strong Connections</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🌍</div>
+                        <h3 style="font-size: 28px; color: var(--color-accent);">10+</h3>
+                        <p style="color: var(--color-text-light);">Countries Served</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⭐</div>
+                        <h3 style="font-size: 28px; color: var(--color-accent);">4.8/5</h3>
+                        <p style="color: var(--color-text-light);">Average Rating</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="section" style="background: #f8fafc;">
+                <h2 class="section-title">How It Works</h2>
+                <div class="grid-4">
+                    <div class="card">
+                        <div class="step-number">1</div>
+                        <h3>Create Your Profile</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Register with your qualifications, skills, and experience. Complete your profile with verified credentials.</p>
+                    </div>
+                    <div class="card">
+                        <div class="step-number">2</div>
+                        <h3>Browse Opportunities</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Explore job listings from top healthcare institutions worldwide. Filter by location, specialization, and salary.</p>
+                    </div>
+                    <div class="card">
+                        <div class="step-number">3</div>
+                        <h3>Apply & Interview</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Submit applications and participate in interviews. Our team provides guidance throughout the process.</p>
+                    </div>
+                    <div class="card">
+                        <div class="step-number">4</div>
+                        <h3>Secure Your Position</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Receive job offer and complete onboarding. We provide visa support and relocation assistance.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="section">
+                <h2 class="section-title">Healthcare Specializations We Support</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-icon">👩‍⚕️</div>
+                        <h3>Registered Nurses</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Connecting experienced RNs with leading healthcare facilities globally.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏠</div>
+                        <h3>Care Givers</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Matching dedicated caregivers with families and care facilities worldwide.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💼</div>
+                        <h3>Healthcare Assistants</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Placing qualified HCAs in hospitals, clinics, and care centers.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👶</div>
+                        <h3>Pediatric Specialists</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Specializing in placing pediatric nurses and specialists.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔬</div>
+                        <h3>Allied Health Professionals</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Supporting therapists, technicians, and allied health specialists.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">✈️</div>
+                        <h3>International Placements</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Facilitating global healthcare staffing solutions with visa support.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="section" style="background: #f8fafc;">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="grid-3">
+                    <div class="testimonial-card">
+                        <div class="star-rating">★★★★★</div>
+                        <p style="color: var(--color-text-light); margin-bottom: 20px;">"Ultimate Baby Nurses helped me secure my dream position in Dubai. The entire process was smooth and professional. Highly recommended!"</p>
+                        <div class="avatar">AK</div>
+                        <h4>Amelia Khan</h4>
+                        <p style="font-size: 14px; color: var(--color-text-light);">Registered Nurse, Dubai</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="star-rating">★★★★★</div>
+                        <p style="color: var(--color-text-light); margin-bottom: 20px;">"Finding qualified healthcare staff was challenging until UBN. They matched us with excellent professionals within weeks."</p>
+                        <div class="avatar">JM</div>
+                        <h4>John Medical</h4>
+                        <p style="font-size: 14px; color: var(--color-text-light);">Hospital Administrator, UK</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="star-rating">★★★★★</div>
+                        <p style="color: var(--color-text-light); margin-bottom: 20px;">"As an international caregiver, UBN provided excellent support with visa documentation and job placement."</p>
+                        <div class="avatar">MJ</div>
+                        <h4>Maria Jose</h4>
+                        <p style="font-size: 14px; color: var(--color-text-light);">Caregiver, USA</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="section" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); color: white; text-align: center; border-radius: 12px; margin-top: 60px;">
+                <h2 style="color: white; margin-bottom: 20px;">Ready to Transform Your Healthcare Career?</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 30px; font-size: 18px;">Join thousands of healthcare professionals working with leading institutions worldwide.</p>
+                <button class="btn btn-primary" onclick="navigateTo('candidates')">Get Started Today</button>
+            </section>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="page-about" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">About Ultimate Baby Nurses</h1>
+                <div class="grid-2">
+                    <div>
+                        <h3 style="margin-bottom: 20px; font-size: 24px;">Our Mission</h3>
+                        <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 20px;">
+                            Ultimate Baby Nurses (UBN) is a leading healthcare staffing and recruitment platform dedicated to connecting skilled healthcare professionals with global opportunities. We bridge the gap between exceptional talent and world-class healthcare institutions.
+                        </p>
+                        <p style="color: var(--color-text-light); line-height: 1.8;">
+                            Our mission is to empower healthcare professionals to achieve their career aspirations while helping healthcare institutions find the right talent to deliver excellent patient care.
+                        </p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 40px; border-radius: 12px; color: white;">
+                        <h3 style="color: white; margin-bottom: 20px;">Why Choose UBN?</h3>
+                        <ul style="list-style: none; line-height: 2;">
+                            <li>✓ Global Network of 50+ Countries</li>
+                            <li>✓ Verified Professional Credentials</li>
+                            <li>✓ Comprehensive Visa Support</li>
+                            <li>✓ 24/7 Customer Support</li>
+                            <li>✓ Competitive Salary Packages</li>
+                            <li>✓ Professional Development Opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" style="background: #f8fafc;">
+                <h2 class="section-title">Our Values</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-icon">💎</div>
+                        <h3>Excellence</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">We maintain the highest standards in recruitment, ensuring quality matches between professionals and institutions.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🤝</div>
+                        <h3>Integrity</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Transparency and honesty are at the core of everything we do, building lasting relationships with all stakeholders.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🌍</div>
+                        <h3>Global Impact</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">We're committed to improving healthcare delivery worldwide by connecting the best talent with the best opportunities.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Leadership & Expertise</h2>
+                <p class="section-subtitle">Professional healthcare recruitment services led by experienced specialists</p>
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <div class="grid-2" style="gap: 30px;">
+                        <div class="card" style="text-align: center;">
+                            <img id="image2" src="image2.png" alt="Thuli Mlalazi" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;">
+                            <h3 style="margin-bottom: 5px; font-size: 20px;">Thuli Mlalazi</h3>
+                            <p style="color: var(--color-accent); font-weight: 600; margin-bottom: 10px; font-size: 14px;">Recruitment Manager</p>
+                            <p style="color: var(--color-text-light); font-size: 14px; margin-bottom: 15px;">Leading candidate selection and employer matching with a focus on quality placements and long-term success.</p>
+                            <div style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+                                <p style="font-size: 13px; margin: 0;"><strong>Expertise:</strong> Talent acquisition, candidate screening, employer relations</p>
+                            
+                            </div>
+                        </div>
+                        <div class="card" style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 15px;">💼</div>
+                            <h3 style="margin-bottom: 10px; font-size: 20px;">Healthcare Staffing Specialists</h3>
+                            <p style="color: var(--color-text-light); font-size: 14px; margin-bottom: 15px;">Working with a diverse network of specialized recruitment professionals delivering tailored staffing solutions across various healthcare disciplines and expertise areas.</p>
+                            <div style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+                                <p style="font-size: 13px; margin: 0;"><strong>Expertise:</strong> Healthcare staffing, regulatory compliance, global placements, multi-disciplinary recruitment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px; padding: 25px; background: #f8fafc; border-radius: 12px; text-align: center; border: 2px solid var(--color-accent);">
+                        <h4 style="margin-bottom: 15px; color: var(--color-primary);">Ready to Discuss Your Healthcare Staffing Needs?</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; align-items: center;">
+                            <div style="text-align: left;">
+                                <p style="font-size: 14px; margin: 5px 0;"><strong>📧 Email:</strong> <a href="mailto:recruitment.ubn@outlook.com" style="color: var(--color-accent); text-decoration: none;">recruitment.ubn@outlook.com</a></p>
+                                <p style="font-size: 14px; margin: 5px 0;"><strong>📞 Phone:</strong> +44 (203) 026-0312</p>
+                                <p style="font-size: 14px; margin: 5px 0;"><strong>💬 WhatsApp:</strong> +27 670-486-798</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- CANDIDATES PAGE -->
+        <div id="page-candidates" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">Healthcare Professionals - Join Our Network</h1>
+                <p class="section-subtitle">Register today and access exclusive job opportunities with top healthcare institutions</p>
+                
+                <div class="grid-2">
+                    <div>
+                        <h3 style="margin-bottom: 30px; font-size: 24px;">Benefits of Joining UBN</h3>
+                        <div style="display: grid; gap: 20px;">
+                            <div style="display: flex; gap: 15px;">
+                                <div style="font-size: 24px;">🎯</div>
+                                <div>
+                                    <h4>Curated Job Opportunities</h4>
+                                    <p style="color: var(--color-text-light); font-size: 14px;">Access positions matched to your skills and experience</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <div style="font-size: 24px;">📈</div>
+                                <div>
+                                    <h4>Career Development</h4>
+                                    <p style="color: var(--color-text-light); font-size: 14px;">Access training and certification programs</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <div style="font-size: 24px;">✈️</div>
+                                <div>
+                                    <h4>Global Opportunities</h4>
+                                    <p style="color: var(--color-text-light); font-size: 14px;">Work internationally with visa and relocation support</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <div style="font-size: 24px;">💰</div>
+                                <div>
+                                    <h4>Competitive Compensation</h4>
+                                    <p style="color: var(--color-text-light); font-size: 14px;">Earn competitive salaries in your field</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: 30px;">Quick Registration Form</h3>
+                        <form id="candidateForm" onsubmit="handleCandidateSubmit(event)">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Country *</label>
+                                <input type="text" name="country" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>WhatsApp Number *</label>
+                                <input type="tel" name="whatsapp" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Healthcare Profession *</label>
+                                <select name="profession" required>
+                                    <option value="">Select profession...</option>
+                                    <option value="Registered Nurse">Registered Nurse</option>
+                                    <option value="Caregiver">Caregiver</option>
+                                    <option value="Healthcare Assistant">Healthcare Assistant</option>
+                                    <option value="Pediatric Specialist">Pediatric Specialist</option>
+                                    <option value="Allied Health Professional">Allied Health Professional</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Years of Experience *</label>
+                                <select name="experience" required>
+                                    <option value="">Select...</option>
+                                    <option value="0-2">0-2 years</option>
+                                    <option value="2-5">2-5 years</option>
+                                    <option value="5-10">5-10 years</option>
+                                    <option value="10+">10+ years</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Current Employer / Institution</label>
+                                <input type="text" name="currentEmployer">
+                            </div>
+                            <div class="form-group">
+                                <label>Key Skills</label>
+                                <textarea name="skills" placeholder="E.g., Patient care, medication management, wound care..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Availability *</label>
+                                <select name="availability" required>
+                                    <option value="">Select...</option>
+                                    <option value="Immediately">Immediately</option>
+                                    <option value="1 month">1 month</option>
+                                    <option value="2-3 months">2-3 months</option>
+                                    <option value="Flexible">Flexible</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Work Locations</label>
+                                <input type="text" name="locations" placeholder="E.g., USA, UK, Canada, Australia">
+                            </div>
+                            <div class="form-group">
+                                <label>CV/Resume File (optional)</label>
+                                <input type="file" name="cvFile" accept=".pdf,.doc,.docx,.txt" onchange="handleFileUpload(event)" id="cvFileInput">
+                                <small style="color: var(--color-text-light); margin-top: 5px; display: block;">Max 5MB • Supported: PDF, DOC, DOCX, TXT</small>
+                                <div id="fileUploadStatus"></div>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" name="consent" id="candidateConsent" required>
+                                <label for="candidateConsent" style="margin-bottom: 0;">I agree to the terms and conditions</label>
+                            </div>
+                            <button type="submit" class="btn btn-accent" style="width: 100%; margin-top: 20px;">Submit Registration</button>
+                        </form>
+                        <div id="candidateMessage"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- CANDIDATE PORTAL PAGE -->
+        <div id="page-candidate-portal" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">Candidate Portal</h1>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3 style="margin-bottom: 20px;">Login</h3>
+                        <form id="portalLoginForm" onsubmit="handlePortalLogin(event)">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Password *</label>
+                                <input type="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-accent" style="width: 100%;">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: 20px;">Portal Features</h3>
+                        <ul style="list-style: none; line-height: 2;">
+                            <li>✓ View Profile & Qualifications</li>
+                            <li>✓ Browse Available Jobs</li>
+                            <li>✓ Submit Job Applications</li>
+                            <li>✓ Track Application Status</li>
+                            <li>✓ Schedule Interviews</li>
+                            <li>✓ Access Resources & Training</li>
+                            <li>✓ Update Preferences</li>
+                            <li>✓ 24/7 Support Access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">Don't have an account yet?</p>
+                    <button class="btn btn-primary" onclick="navigateTo('candidates')">Register Now</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- EMPLOYERS PAGE -->
+        <div id="page-employers" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">For Employers & Healthcare Institutions</h1>
+                <p class="section-subtitle">Find qualified healthcare professionals to meet your staffing needs</p>
+
+                <div class="grid-2" style="margin-bottom: 50px;">
+                    <div class="card">
+                        <div class="card-icon">🔍</div>
+                        <h3>Find Qualified Staff</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Access our verified pool of healthcare professionals with extensive qualifications and experience.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Fast Recruitment</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Reduce time-to-hire with our streamlined matching and interview scheduling process.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">✅</div>
+                        <h3>Pre-Vetted Talent</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">All candidates are verified with credentials checked and background screening completed.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Analytics Dashboard</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Track recruitment metrics and manage positions from one centralized dashboard.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 style="margin-bottom: 30px; font-size: 24px;">Post a Job Opportunity</h3>
+                    <form id="employerForm" onsubmit="handleEmployerSubmit(event)">
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label>Company Name *</label>
+                                <input type="text" name="companyName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Contact Person Name *</label>
+                                <input type="text" name="contactPerson" required>
+                            </div>
+                        </div>
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Country *</label>
+                                <input type="text" name="country" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Healthcare Role Required *</label>
+                            <select name="roleRequired" required>
+                                <option value="">Select role...</option>
+                                <option value="Registered Nurse">Registered Nurse</option>
+                                <option value="Caregiver">Caregiver</option>
+                                <option value="Healthcare Assistant">Healthcare Assistant</option>
+                                <option value="Pediatric Specialist">Pediatric Specialist</option>
+                                <option value="Allied Health Professional">Allied Health Professional</option>
+                                <option value="Multiple">Multiple Positions</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Staff Needed *</label>
+                            <input type="number" name="staffCount" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Required Skills & Qualifications *</label>
+                            <textarea name="skills" placeholder="E.g., Must have 5+ years experience, BScN required..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Visa Sponsorship Available? *</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="visaSponsorship" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="visaSponsorship" value="No"> No</label>
+                                <label><input type="radio" name="visaSponsorship" value="Partial"> Partial</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Job Posting</button>
+                    </form>
+                    <div id="employerMessage"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PROFESSIONAL DEVELOPMENT PAGE -->
+        <div id="page-professional-development" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h1 class="section-title" style="margin-bottom: 16px;">Advance Your Healthcare Career – Browse Courses</h1>
+                    <p class="section-subtitle" style="font-size: 18px;">Certified courses, hybrid programs, and specialty training to boost your international opportunities.</p>
+                    <div style="display: flex; justify-content: center; gap: 48px; margin-top: 32px; flex-wrap: wrap;">
+                        <div style="text-align: center;">
+                            <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(62, 158, 201, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+                                <span style="color: #3b9ec9; font-size: 20px;">💻</span>
+                            </div>
+                            <span style="font-size: 12px; font-weight: 500; color: #1e5f8a;">Online</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(62, 158, 201, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+                                <span style="color: #3b9ec9; font-size: 20px;">👥</span>
+                            </div>
+                            <span style="font-size: 12px; font-weight: 500; color: #1e5f8a;">Face-to-Face</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(62, 158, 201, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+                                <span style="color: #3b9ec9; font-size: 20px;">🏆</span>
+                            </div>
+                            <span style="font-size: 12px; font-weight: 500; color: #1e5f8a;">Certified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alison Affiliate Courses Section -->
+                <div style="margin-bottom: 50px;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                        <div style="width: 36px; height: 36px; border-radius: 8px; background: #3b9ec9; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white; font-size: 20px;">📖</span>
+                        </div>
+                        <h2 style="font-size: 28px; color: var(--color-primary); margin: 0;">Alison Affiliate Courses</h2>
+                    </div>
+                    <p style="color: var(--color-text-light); margin-left: 48px; margin-bottom: 24px;">Internationally recognized free online courses</p>
+
+                    <div class="grid-3" style="gap: 20px;">
+                        <!-- Alison Card 1 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">
+                                <div style="width: 44px; height: 44px; border-radius: 8px; background: linear-gradient(135deg, rgba(62, 158, 201, 0.2), rgba(62, 158, 201, 0.1)); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <span style="color: #3b9ec9; font-size: 22px;">❤️</span>
+                                </div>
+                                <div>
+                                    <span style="display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: #3b9ec9; color: white; margin-bottom: 8px;">Diploma</span>
+                                    <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0;">Health and Social Care</h3>
+                                </div>
+                            </div>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">Core principles for international healthcare work, covering care planning and patient support.</p>
+                            <a href="https://alfryvr.alison.com/course/diploma-in-health-and-social-care" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none;">🔗 Enroll Now</a>
+                        </div>
+
+                        <!-- Alison Card 2 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">
+                                <div style="width: 44px; height: 44px; border-radius: 8px; background: linear-gradient(135deg, rgba(62, 158, 201, 0.2), rgba(62, 158, 201, 0.1)); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <span style="color: #3b9ec9; font-size: 22px;">🛡️</span>
+                                </div>
+                                <div>
+                                    <span style="display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: #3b9ec9; color: white; margin-bottom: 8px;">Diploma</span>
+                                    <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0;">First Aid and CPR Essentials</h3>
+                                </div>
+                            </div>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">Life-saving techniques and emergency response skills for lifeguards and care professionals.</p>
+                            <a href="https://alfryvr.alison.com/course/diploma-in-first-aid-and-cpr-essentials-for-lifeguards" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none;">🔗 Enroll Now</a>
+                        </div>
+
+                        <!-- Alison Card 3 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">
+                                <div style="width: 44px; height: 44px; border-radius: 8px; background: linear-gradient(135deg, rgba(62, 158, 201, 0.2), rgba(62, 158, 201, 0.1)); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <span style="color: #3b9ec9; font-size: 22px;">💧</span>
+                                </div>
+                                <div>
+                                    <span style="display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: #3b9ec9; color: white; margin-bottom: 8px;">Diploma</span>
+                                    <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0;">Phlebotomy</h3>
+                                </div>
+                            </div>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">Skills for blood collection, handling, and lab procedures essential for clinical settings.</p>
+                            <a href="https://alfryvr.alison.com/course/diploma-in-phlebotomy" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none;">🔗 Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UBN Hybrid Courses Section -->
+                <div style="margin-bottom: 50px;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                        <div style="width: 36px; height: 36px; border-radius: 8px; background: #f59e0b; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white; font-size: 20px;">🎓</span>
+                        </div>
+                        <h2 style="font-size: 28px; color: var(--color-primary); margin: 0;">UBN Hybrid Courses</h2>
+                    </div>
+                    <p style="color: var(--color-text-light); margin-left: 48px; margin-bottom: 24px;">Online + Face-to-Face • Scheduled for your availability</p>
+
+                    <div class="grid-3" style="gap: 20px;">
+                        <!-- Hybrid Course 1 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                                <div style="width: 32px; height: 32px; border-radius: 6px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center;">
+                                    <span style="color: #f59e0b; font-size: 18px;">👶</span>
+                                </div>
+                                <span style="font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 20px; background: rgba(245, 158, 11, 0.1); color: #f59e0b;">Hybrid</span>
+                            </div>
+                            <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0 0 8px 0;">Caregiving Courses</h3>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">Practical skills for children, elderly, and special needs clients in home and facility settings.</p>
+                            <a href="https://wa.me/message/UBN" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none; background: #f59e0b;">💬 Enquire Now</a>
+                        </div>
+
+                        <!-- Hybrid Course 2 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                                <div style="width: 32px; height: 32px; border-radius: 6px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center;">
+                                    <span style="color: #f59e0b; font-size: 18px;">✓</span>
+                                </div>
+                                <span style="font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 20px; background: rgba(245, 158, 11, 0.1); color: #f59e0b;">Hybrid</span>
+                            </div>
+                            <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0 0 8px 0;">UK Mandatory Training</h3>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">Infection control, health & safety, safeguarding, and other UK compliance requirements.</p>
+                            <a href="https://wa.me/message/UBN" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none; background: #f59e0b;">💬 Enquire Now</a>
+                        </div>
+
+                        <!-- Hybrid Course 3 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                                <div style="width: 32px; height: 32px; border-radius: 6px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center;">
+                                    <span style="color: #f59e0b; font-size: 18px;">❤️</span>
+                                </div>
+                                <span style="font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 20px; background: rgba(245, 158, 11, 0.1); color: #f59e0b;">Hybrid</span>
+                            </div>
+                            <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0 0 8px 0;">Newborn Care Specialist</h3>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">Infant care, feeding routines, and development milestones for specialist caregivers.</p>
+                            <a href="https://wa.me/message/UBN" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none; background: #f59e0b;">💬 Enquire Now</a>
+                        </div>
+
+                        <!-- Hybrid Course 4 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                                <div style="width: 32px; height: 32px; border-radius: 6px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center;">
+                                    <span style="color: #f59e0b; font-size: 18px;">🗣️</span>
+                                </div>
+                                <span style="font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 20px; background: rgba(245, 158, 11, 0.1); color: #f59e0b;">Hybrid</span>
+                            </div>
+                            <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0 0 8px 0;">OET & IELTS Prep Courses</h3>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">English proficiency preparation tailored for international healthcare professionals.</p>
+                            <a href="https://wa.me/message/UBN" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none; background: #f59e0b;">💬 Enquire Now</a>
+                        </div>
+
+                        <!-- Hybrid Course 5 -->
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                                <div style="width: 32px; height: 32px; border-radius: 6px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center;">
+                                    <span style="color: #f59e0b; font-size: 18px;">⚓</span>
+                                </div>
+                                <span style="font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 20px; background: rgba(245, 158, 11, 0.1); color: #f59e0b;">Hybrid</span>
+                            </div>
+                            <h3 style="font-size: 18px; font-weight: 700; color: var(--color-primary); margin: 0 0 8px 0;">Yacht Stewardess Course</h3>
+                            <p style="font-size: 14px; line-height: 1.6; color: var(--color-text-light); flex-grow: 1; margin-bottom: 16px;">Luxury hospitality and care roles at sea — a unique path for adventurous professionals.</p>
+                            <a href="https://wa.me/message/UBN" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="width: 100%; padding: 12px 16px; text-align: center; text-decoration: none; background: #f59e0b;">💬 Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Info -->
+                <div style="text-align: center; padding: 30px; background: rgba(30, 95, 138, 0.05); border-radius: 12px; margin-top: 40px;">
+                    <div style="display: flex; justify-content: center; gap: 32px; margin-bottom: 20px; flex-wrap: wrap;">
+                        <div style="text-align: center;">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(62, 158, 201, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 8px;">
+                                <span style="color: #3b9ec9; font-size: 24px;">💻</span>
+                            </div>
+                            <span style="font-size: 12px; font-weight: 500; color: var(--color-text-light);">Online Learning</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(62, 158, 201, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 8px;">
+                                <span style="color: #3b9ec9; font-size: 24px;">👥</span>
+                            </div>
+                            <span style="font-size: 12px; font-weight: 500; color: var(--color-text-light);">Face-to-Face</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(62, 158, 201, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 8px;">
+                                <span style="color: #3b9ec9; font-size: 24px;">🏆</span>
+                            </div>
+                            <span style="font-size: 12px; font-weight: 500; color: var(--color-text-light);">Certificates</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 12px; line-height: 1.8; max-width: 600px; margin: 0 auto; color: var(--color-text-light);">All UBN courses are hybrid – online & face-to-face – scheduled according to your availability. For Alison courses, clicks contribute to our affiliate program, helping us support healthcare professionals globally.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- RESOURCES PAGE -->
+        <div id="page-resources" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">Resources & Blog</h1>
+                <p class="section-subtitle">Tips, guides, and insights for healthcare professionals</p>
+
+                <div class="grid-3" style="margin-bottom: 50px;">
+                    <div class="card">
+                        <h3>International Healthcare Career Guide</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px; margin-bottom: 20px;">Comprehensive guide to building an international healthcare career, visa requirements, and salary expectations.</p>
+                        <button class="btn btn-outline" onclick="showToast('Resource opening...', 'success')">Download PDF</button>
+                    </div>
+                    <div class="card">
+                        <h3>Interview Preparation Tips</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px; margin-bottom: 20px;">Master the art of healthcare job interviews with our expert tips and common questions guide.</p>
+                        <button class="btn btn-outline" onclick="scrollToElement('interview-article')">Read Article</button>
+                    </div>
+                    <div class="card">
+                        <h3>Certification & Accreditation</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px; margin-bottom: 20px;">Information on required certifications, continuing education, and professional accreditations.</p>
+                        <button class="btn btn-outline" onclick="scrollToElement('certification-article')">View Checklist</button>
+                    </div>
+                    <div class="card">
+                        <h3>Salary Trends 2026</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px; margin-bottom: 20px;">Discover current salary trends for healthcare professionals worldwide by location and specialty.</p>
+                        <button class="btn btn-outline" onclick="scrollToElement('salary-trends-article')">View Report</button>
+                    </div>
+                    <div class="card">
+                        <h3>Visa & Immigration Guide</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px; margin-bottom: 20px;">Step-by-step guide to visa sponsorship, work permits, and immigration requirements.</p>
+                        <button class="btn btn-outline" onclick="scrollToElement('visa-immigration-article')">Learn More</button>
+                    </div>
+                    <div class="card">
+                        <h3>Professional Development</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px; margin-bottom: 20px;">Access online courses, webinars, and training programs to advance your healthcare career.</p>
+                        <button class="btn btn-outline" onclick="showToast('Resource opening...', 'success')">Browse Courses</button>
+                    </div>
+                </div>
+
+                <!-- INTERVIEW PREPARATION ARTICLE -->
+                <div id="interview-article" style="background: #f0f7ff; padding: 40px 30px; border-radius: 12px; margin-bottom: 50px; border-left: 5px solid var(--color-accent);">
+                    <h2 style="color: var(--color-primary); margin-bottom: 20px; font-size: 28px;">Master the Art of Healthcare Job Interviews</h2>
+                    
+                    <p style="color: var(--color-text); font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+                        Healthcare roles are among the most important and trusted professions in society. Employers are not only looking for qualifications—they are looking for compassion, reliability, communication skills, and professionalism.
+                    </p>
+
+                    <p style="color: var(--color-text); font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                        Preparing properly for a healthcare interview can significantly increase your chances of success. Whether you are applying for a role as a care assistant, healthcare assistant, support worker, or newborn care specialist, understanding what employers expect can help you stand out from other candidates.
+                    </p>
+
+                    <!-- Article Section 1 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">1. Understand the Role You Are Applying For</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">Before attending any interview, take time to carefully review the job description.</p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">Employers may ask questions related to:</p>
+                        <ul style="color: var(--color-text-light); margin-left: 20px; margin-bottom: 15px; list-style: disc;">
+                            <li>Patient care responsibilities</li>
+                            <li>Communication with patients and families</li>
+                            <li>Teamwork within a healthcare setting</li>
+                            <li>Handling challenging situations</li>
+                        </ul>
+                        <p style="color: var(--color-text-light);">Understanding the responsibilities of the role will allow you to give clear and relevant answers during your interview.</p>
+                    </div>
+
+                    <!-- Article Section 2 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">2. Research the Organization</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">Employers appreciate candidates who take the time to learn about their organization.</p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">Before the interview:</p>
+                        <ul style="color: var(--color-text-light); margin-left: 20px; margin-bottom: 15px; list-style: disc;">
+                            <li>Visit the company's website</li>
+                            <li>Understand their services and values</li>
+                            <li>Learn about the type of patients or clients they support</li>
+                        </ul>
+                        <p style="color: var(--color-text-light);">This preparation shows genuine interest and professionalism.</p>
+                    </div>
+
+                    <!-- Article Section 3 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">3. Be Ready to Demonstrate Compassion</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">Healthcare roles require a high level of empathy and patience. Interviewers often ask questions designed to understand how you treat others.</p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">Possible question:</p>
+                        <p style="color: var(--color-text-light); font-style: italic; margin-bottom: 15px; padding-left: 15px; border-left: 3px solid var(--color-accent);">
+                            "Tell us about a time you helped someone who was vulnerable or in need."
+                        </p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">When answering, focus on:</p>
+                        <ul style="color: var(--color-text-light); margin-left: 20px; margin-bottom: 15px; list-style: disc;">
+                            <li>Listening skills</li>
+                            <li>Respect for patients</li>
+                            <li>Emotional support</li>
+                            <li>Professional conduct</li>
+                        </ul>
+                        <p style="color: var(--color-text-light);">Employers want to see that you truly care about the wellbeing of those you serve.</p>
+                    </div>
+
+                    <!-- Article Section 4 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">4. Prepare Examples From Your Experience</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">Many healthcare interviews use scenario-based questions.</p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">Examples include:</p>
+                        <ul style="color: var(--color-text-light); margin-left: 20px; margin-bottom: 15px; list-style: disc;">
+                            <li>"How would you handle a difficult patient?"</li>
+                            <li>"What would you do if a patient refused care?"</li>
+                            <li>"How do you manage stressful situations during a busy shift?"</li>
+                        </ul>
+                        <p style="color: var(--color-text-light);">Think about real experiences from your work or training and explain how you handled the situation and what you learned from it.</p>
+                    </div>
+
+                    <!-- Article Section 5 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">5. Demonstrate Strong Communication Skills</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">Communication is a critical skill in healthcare.</p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">During the interview:</p>
+                        <ul style="color: var(--color-text-light); margin-left: 20px; margin-bottom: 15px; list-style: disc;">
+                            <li>Speak clearly and confidently</li>
+                            <li>Listen carefully to each question</li>
+                            <li>Answer honestly and professionally</li>
+                        </ul>
+                        <p style="color: var(--color-text-light);">Good communication reassures employers that you can interact effectively with patients, families, and healthcare teams.</p>
+                    </div>
+
+                    <!-- Article Section 6 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">6. Present Yourself Professionally</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">First impressions matter.</p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">Before the interview:</p>
+                        <ul style="color: var(--color-text-light); margin-left: 20px; margin-bottom: 15px; list-style: disc;">
+                            <li>Dress neatly and professionally</li>
+                            <li>Ensure you are punctual</li>
+                            <li>Bring copies of your CV and relevant certificates if required</li>
+                        </ul>
+                        <p style="color: var(--color-text-light);">Professional presentation shows respect for the opportunity and the organization.</p>
+                    </div>
+
+                    <!-- Article Section 7 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">7. Prepare Questions for the Employer</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">At the end of most interviews, you will be asked if you have any questions.</p>
+                        <p style="color: var(--color-text-light); font-weight: 600; margin-bottom: 10px;">Consider asking:</p>
+                        <ul style="color: var(--color-text-light); margin-left: 20px; margin-bottom: 15px; list-style: disc;">
+                            <li>What does a typical day look like in this role?</li>
+                            <li>What training opportunities are available?</li>
+                            <li>What qualities do successful employees in this role usually demonstrate?</li>
+                        </ul>
+                        <p style="color: var(--color-text-light);">This shows that you are interested in growth and long-term contribution.</p>
+                    </div>
+
+                    <!-- Article Section 8 -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 15px; font-size: 18px;">8. Follow Up After the Interview</h3>
+                        <p style="color: var(--color-text-light); margin-bottom: 15px;">After your interview, sending a brief follow-up message thanking the interviewer for their time can leave a positive impression.</p>
+                        <p style="color: var(--color-text-light);">A simple message expressing appreciation and continued interest in the role demonstrates professionalism.</p>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 30px; border-radius: 8px; color: white; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 15px;">Final Thoughts</h3>
+                        <p style="margin: 0; font-size: 16px; line-height: 1.8;">
+                            Healthcare careers are built on trust, dedication, and compassion. Preparing well for your interview allows you to demonstrate not only your skills but also your commitment to providing quality care. With the right preparation, confidence, and professionalism, you can make a strong impression and take the next step in your healthcare career.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SALARY TRENDS ARTICLE -->
+                <div id="salary-trends-article" style="background: #f0f7ff; padding: 40px 30px; border-radius: 12px; margin-bottom: 50px; border-left: 5px solid var(--color-accent);">
+                    <h2 style="color: var(--color-primary); margin-bottom: 10px; font-size: 32px;">Latest Salary Trends in Healthcare (2026)</h2>
+                    <p style="color: var(--color-text-light); margin-bottom: 30px; font-size: 16px; font-style: italic;">Where pay stands today — and where it's going</p>
+
+                    <p style="color: var(--color-text); margin-bottom: 25px; line-height: 1.8;">
+                        The global healthcare workforce continues to be one of the most in‑demand sectors in the world. From care assistants and support workers to registered nurses and specialists, 2026 has brought fresh shifts in compensation patterns — driven by workforce shortages, rising costs of living, expanding care models, and changing employer expectations.
+                    </p>
+
+                    <p style="color: var(--color-text); margin-bottom: 30px; line-height: 1.8;">
+                        Whether you're seeking your next role or managing a care workforce, understanding salary trends helps you make informed decisions about careers and recruitment strategies.
+                    </p>
+
+                    <!-- Section 1 -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">1. Salaries in 2026: A Market Snapshot</h3>
+                        <p style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            Although exact figures vary by country, region, and service type, the overall trend shows modest but consistent growth in healthcare salaries — especially where workforce shortages remain acute.
+                        </p>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">Role‑Based Salary Range Estimates</h4>
+                        <p style="color: var(--color-text-light); margin-bottom: 20px; font-size: 14px;">
+                            (Approximate annual figures; specific ranges vary by location and employer type)
+                        </p>
+
+                        <div style="overflow-x: auto; margin-bottom: 20px;">
+                            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                                <thead>
+                                    <tr style="background: #f5f5f5;">
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Role / Title</th>
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Estimated Salary Range 2026</th>
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Contextual Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Care Assistant / Support Worker</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">£21,000 – £31,000 (UK)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Competitive in larger markets; benefits improving</td>
+                                    </tr>
+                                    <tr style="background: #fafafa;">
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Healthcare Assistant</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">£24,000 – £35,000 (UK)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Higher with NHS and specialist care roles</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Registered Nurse (RN)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">£34,000 – £48,000 (UK)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Experience and specialty increasingly rewarded</td>
+                                    </tr>
+                                    <tr style="background: #fafafa;">
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Senior Clinical Roles / Team Leads</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">£38,000 – £55,000+ (UK)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Leadership pay rising with responsibility</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Specialists (Critical Care / Neonatal / Palliative)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">£45,000+ (UK)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Niche skills command top pay</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="color: var(--color-text-light); font-size: 14px; font-style: italic;">
+                            Note: Ranges above are illustrative trends and reflect demand patterns as of early 2026. Salaries may differ based on region and employer type (public vs private).
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">2. Regional Highlights</h3>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">🇬🇧 United Kingdom</h4>
+                        <ul style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            <li style="margin-bottom: 10px;">Pay bands continue to rise — especially in regions with chronic staff shortages.</li>
+                            <li style="margin-bottom: 10px;">Employers are offering shift premiums, weekend bonuses, and retention incentives to stay competitive.</li>
+                            <li>Urban areas such as London, Birmingham, and Manchester often show higher base pay due to cost of living.</li>
+                        </ul>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">🇺🇸 United States</h4>
+                        <ul style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            <li style="margin-bottom: 10px;">Salary growth is strong in home care, long‑term care facilities, and outpatient support teams.</li>
+                            <li style="margin-bottom: 10px;">States like California, Texas, and New York offer significantly higher pay for RNs and specialist roles.</li>
+                            <li>Many positions now include signing bonuses and relocation support.</li>
+                        </ul>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">🇨🇦 Canada</h4>
+                        <ul style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            <li style="margin-bottom: 10px;">Provincial variations remain significant — major cities tend to offer higher salaries, balanced by increased living costs.</li>
+                            <li>Healthcare assistants and licensed practical nurses remain in high demand.</li>
+                        </ul>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">🇦🇺 Australia</h4>
+                        <ul style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            <li style="margin-bottom: 10px;">Salary bands are rising, particularly for community care roles.</li>
+                            <li>Employers increasingly emphasize flexible scheduling and skill development support.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">3. What's Driving Salary Growth in 2026</h3>
+
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--color-accent); margin-bottom: 10px;">⚠️ Persistent Workforce Shortages</h4>
+                            <p style="color: var(--color-text); margin-left: 20px;">Many countries still face gaps in care staffing, especially in long‑term care, community care, and specialist nursing.</p>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--color-accent); margin-bottom: 10px;">📈 Cost of Living Adjustments</h4>
+                            <p style="color: var(--color-text); margin-left: 20px;">Inflation and higher living expenses in urban markets continue to push base salaries upward.</p>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--color-accent); margin-bottom: 10px;">🧠 Skill‑Based Value</h4>
+                            <p style="color: var(--color-text); margin-left: 20px;">Professionals with certifications in areas like palliative care, dementia care, neonatal support, or clinical leadership are commanding higher wages.</p>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--color-accent); margin-bottom: 10px;">🆕 New Care Delivery Models</h4>
+                            <p style="color: var(--color-text); margin-left: 20px;">Remote patient monitoring, telehealth support, and hybrid care roles are creating new salary dynamics — often paying a premium for digital literacy combined with clinical competence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">4. What Candidates Should Know (2026 Edition)</h3>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">💬 Negotiable Pay Components</h4>
+                        <p style="color: var(--color-text); margin-bottom: 15px;">When discussing job offers, candidates should consider:</p>
+                        <ul style="color: var(--color-text); margin-bottom: 25px; line-height: 1.8;">
+                            <li style="margin-bottom: 10px;">Base salary</li>
+                            <li style="margin-bottom: 10px;">Shift and weekend differentials</li>
+                            <li style="margin-bottom: 10px;">Retention or signing bonuses</li>
+                            <li>Paid training and certification support</li>
+                        </ul>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">📌 Benefits Matter</h4>
+                        <p style="color: var(--color-text); margin-bottom: 15px;">Total compensation increasingly includes:</p>
+                        <ul style="color: var(--color-text); margin-bottom: 25px; line-height: 1.8;">
+                            <li style="margin-bottom: 10px;">Healthcare or pension contributions</li>
+                            <li style="margin-bottom: 10px;">Paid time off</li>
+                            <li style="margin-bottom: 10px;">Continued professional education</li>
+                            <li>Flexible scheduling options</li>
+                        </ul>
+
+                        <h4 style="color: var(--color-accent); margin-bottom: 15px; font-size: 18px;">📍 Location Influences Pay</h4>
+                        <p style="color: var(--color-text);">Urban centers may offer higher salaries, but rural roles can provide robust benefits and easier work‑life balance.</p>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">5. Guidance for Employers in 2026</h3>
+                        <p style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            To attract and keep quality talent, leading care providers are adopting strategies like:
+                        </p>
+
+                        <ul style="color: var(--color-text); margin-bottom: 20px; line-height: 2;">
+                            <li style="margin-bottom: 10px;">✔ Transparent salary bands</li>
+                            <li style="margin-bottom: 10px;">✔ Paid professional development</li>
+                            <li style="margin-bottom: 10px;">✔ Flexible shift offerings</li>
+                            <li style="margin-bottom: 10px;">✔ Retention incentives and performance bonuses</li>
+                            <li>✔ Enhanced onboarding support</li>
+                        </ul>
+
+                        <p style="color: var(--color-text); line-height: 1.8;">
+                            Forward‑looking employers who invest in staff development and supportive work environments are seeing stronger retention and better candidate engagement.
+                        </p>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">6. What to Watch for in 2027 and Beyond</h3>
+                        <p style="color: var(--color-text); margin-bottom: 20px;">Industry analysts forecast:</p>
+
+                        <ul style="color: var(--color-text); margin-bottom: 20px; line-height: 2;">
+                            <li style="margin-bottom: 10px;">➡ Continued moderate salary growth</li>
+                            <li style="margin-bottom: 10px;">➡ Expanded roles in digital care coordination and remote patient support</li>
+                            <li style="margin-bottom: 10px;">➡ Increased competition for midskills and specialists</li>
+                            <li>➡ Greater emphasis on workforce wellbeing and sustainable care models</li>
+                        </ul>
+
+                        <p style="color: var(--color-text); line-height: 1.8;">
+                            Healthcare compensation in 2027 is expected to reflect broader changes in how care is delivered, staffed, and supported financially.
+                        </p>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 30px; border-radius: 8px; color: white; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 15px;">Conclusion</h3>
+                        <p style="margin: 0; font-size: 16px; line-height: 1.8;">
+                            In 2026, healthcare professionals are entering a market that values skills, flexibility, and commitment. Competitive salaries and incentive structures are now part of recruiting and retaining strong teams. Understanding these trends not only helps candidates navigate their careers but equips employers to build stronger, more stable care workforces.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- UK CERTIFICATION & ACCREDITATION CHECKLIST ARTICLE -->
+                <div id="certification-article" style="background: #f0f7ff; padding: 40px 30px; border-radius: 12px; margin-bottom: 50px; border-left: 5px solid var(--color-accent);">
+                    <h2 style="color: var(--color-primary); margin-bottom: 10px; font-size: 32px;">UK Health & Social Care Certification Checklist</h2>
+                    <p style="color: var(--color-text-light); margin-bottom: 30px; font-size: 16px; font-style: italic;">For Overseas Workers Seeking Healthcare Roles in the UK</p>
+
+                    <p style="color: var(--color-text); margin-bottom: 30px; line-height: 1.8;">
+                        Use this checklist to make sure you have all the necessary certifications, registrations, and accreditations before applying for health or social care roles in the UK. Proper preparation and documentation can significantly speed up the hiring process and increase your competitiveness as an international healthcare professional.
+                    </p>
+
+                    <!-- Section 1: Core Certifications -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">1. Core Certifications</h3>
+
+                        <div style="overflow-x: auto; margin-bottom: 20px;">
+                            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                                <thead>
+                                    <tr style="background: #f5f5f5;">
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Certification</th>
+                                        <th style="padding: 12px; text-align: center; border: 1px solid #ddd; color: var(--color-primary);">Status</th>
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">First Aid & CPR</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Must be current, usually valid for 2–3 years</td>
+                                    </tr>
+                                    <tr style="background: #fafafa;">
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Basic Life Support (BLS)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Essential for nurses, HCAs, and care workers</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Infection Control & Health & Safety</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Often part of employer onboarding</td>
+                                    </tr>
+                                    <tr style="background: #fafafa;">
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Food Safety & Hygiene (if working with food in care homes)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Optional but advantageous</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Mental Health First Aid</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Optional, highly recommended for social care roles</td>
+                                    </tr>
+                                    <tr style="background: #fafafa;">
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Newborn / Pediatric Care Certification</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Required for neonatal roles or baby care specialists</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Professional Registration -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">2. Professional Registration</h3>
+
+                        <div style="overflow-x: auto; margin-bottom: 20px;">
+                            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                                <thead>
+                                    <tr style="background: #f5f5f5;">
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Role</th>
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Regulatory Body</th>
+                                        <th style="padding: 12px; text-align: center; border: 1px solid #ddd; color: var(--color-primary);">Status</th>
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Nurse / Midwife</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Nursing & Midwifery Council (NMC)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Registration is mandatory before UK employment</td>
+                                    </tr>
+                                    <tr style="background: #fafafa;">
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Care Worker / Social Care Staff</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Care Quality Commission (CQC) standards</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Employers check compliance</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Allied Health Professional</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Health & Care Professions Council (HCPC)</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">For physiotherapists, occupational therapists, etc.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Continuing Professional Development -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">3. Continuing Professional Development (CPD)</h3>
+
+                        <ul style="color: var(--color-text); line-height: 2;">
+                            <li style="margin-bottom: 15px;">☐ Complete required CPD hours per year</li>
+                            <li style="margin-bottom: 15px;">☐ Keep certificates of attendance from workshops, online courses, or conferences</li>
+                            <li>☐ Update skills in line with UK best practices</li>
+                        </ul>
+
+                        <p style="color: var(--color-text); margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 5px; border-left: 4px solid #ffc107;">
+                            <strong>💡 Tip:</strong> UK healthcare employers value continuous learning. Keep documentation of all professional development activities to demonstrate commitment to your career growth.
+                        </p>
+                    </div>
+
+                    <!-- Section 4: Additional Accreditations & Memberships -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">4. Additional Accreditations & Memberships</h3>
+
+                        <div style="overflow-x: auto; margin-bottom: 20px;">
+                            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                                <thead>
+                                    <tr style="background: #f5f5f5;">
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Accreditation / Membership</th>
+                                        <th style="padding: 12px; text-align: center; border: 1px solid #ddd; color: var(--color-primary);">Status</th>
+                                        <th style="padding: 12px; text-align: left; border: 1px solid #ddd; color: var(--color-primary);">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">NHS Trust-approved training</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Adds credibility to your profile</td>
+                                    </tr>
+                                    <tr style="background: #fafafa;">
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Membership in RCN / BASW</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Enhances professional standing</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">International infant care or lactation certification</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">☐</td>
+                                        <td style="padding: 12px; border: 1px solid #ddd;">Recommended for newborn care roles</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Section 5: Document Preparation & Tips -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">5. Document Preparation & Tips</h3>
+
+                        <ul style="color: var(--color-text); line-height: 2;">
+                            <li style="margin-bottom: 15px;">☐ Verify all degrees and diplomas with recognized international bodies</li>
+                            <li style="margin-bottom: 15px;">☐ Translate documents if not in English (official translations only)</li>
+                            <li style="margin-bottom: 15px;">☐ Keep digital copies ready for online applications</li>
+                            <li>☐ Check visa or work permit requirements for healthcare professionals</li>
+                        </ul>
+                    </div>
+
+                    <!-- Key Takeaway -->
+                    <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 30px; border-radius: 8px; color: white; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 15px;">✅ Pro Tip: Speed Up Your Hiring Process</h3>
+                        <p style="margin: 0; font-size: 16px; line-height: 1.8;">
+                            Employers in the UK often prefer candidates who already have NMC registration or CQC-compliant certifications. Completing these early can significantly accelerate your hiring process and position you as a serious, committed candidate in the competitive UK healthcare market.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- VISA & IMMIGRATION GUIDE ARTICLE -->
+                <div id="visa-immigration-article" style="background: #f0f7ff; padding: 40px 30px; border-radius: 12px; margin-bottom: 50px; border-left: 5px solid var(--color-accent);">
+                    <h2 style="color: var(--color-primary); margin-bottom: 10px; font-size: 32px;">Visa & Immigration Guide</h2>
+                    <p style="color: var(--color-text-light); margin-bottom: 30px; font-size: 16px; font-style: italic;">Working in Health & Social Care Overseas</p>
+
+                    <p style="color: var(--color-text); margin-bottom: 30px; line-height: 1.8;">
+                        If you're planning to take your healthcare career abroad, understanding visa sponsorship, work permits, and immigration requirements is crucial. Countries like the UK have strict rules to ensure only qualified professionals enter the workforce legally. This guide breaks it down step by step, helping you navigate the process with confidence and clarity.
+                    </p>
+
+                    <!-- Section 1: Identify Your Role & Visa Type -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">1. Identify Your Role & Visa Type</h3>
+                        <p style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            Different healthcare roles require different visa types. For the UK, common options include:
+                        </p>
+
+                        <div style="background: #f9f9f9; border-left: 4px solid var(--color-accent); padding: 15px; margin-bottom: 20px;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 10px;">💼 Skilled Worker Visa</h4>
+                            <p style="color: var(--color-text); margin: 0;">For nurses, care workers, social workers, and other health professionals.</p>
+                        </div>
+
+                        <div style="background: #f9f9f9; border-left: 4px solid var(--color-accent); padding: 15px; margin-bottom: 20px;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 10px;">🏥 Health and Care Visa</h4>
+                            <p style="color: var(--color-text); margin: 0;">A specialized route for medical staff, faster processing and reduced fees.</p>
+                        </div>
+
+                        <div style="background: #f9f9f9; border-left: 4px solid var(--color-accent); padding: 15px; margin-bottom: 20px;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 10px;">⏰ Temporary Worker Visa</h4>
+                            <p style="color: var(--color-text); margin: 0;">For short-term healthcare assignments or locum positions.</p>
+                        </div>
+
+                        <p style="color: var(--color-text); margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 5px; border-left: 4px solid #ffc107;">
+                            <strong>💡 Tip:</strong> Check if your profession is on the eligible shortage occupation list. This can make visa approval faster.
+                        </p>
+                    </div>
+
+                    <!-- Section 2: Secure Job Offer & Sponsorship -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">2. Secure a Job Offer & Sponsorship</h3>
+
+                        <ul style="color: var(--color-text); line-height: 2;">
+                            <li style="margin-bottom: 15px;">✓ You must have a confirmed job offer from a licensed UK employer.</li>
+                            <li style="margin-bottom: 15px;">✓ The employer provides a Certificate of Sponsorship (CoS), which is a unique reference number required for your visa application.</li>
+                            <li>✓ Make sure your employer is approved by the UK Home Office to sponsor overseas workers.</li>
+                        </ul>
+
+                        <p style="color: var(--color-text); margin-top: 20px; padding: 15px; background: #e7f3ff; border-radius: 5px; border-left: 4px solid var(--color-accent);">
+                            <strong>ℹ️ Important:</strong> The Certificate of Sponsorship (CoS) is critical—it's your legal authorization to work in the UK. Keep this document safe and reference it throughout your application.
+                        </p>
+                    </div>
+
+                    <!-- Section 3: Prepare Required Documents -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">3. Prepare Required Documents</h3>
+                        <p style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            Common documents needed for health and social care visa applications:
+                        </p>
+
+                        <ul style="color: var(--color-text); line-height: 2;">
+                            <li style="margin-bottom: 15px;">📄 Valid passport</li>
+                            <li style="margin-bottom: 15px;">📋 Certificate of Sponsorship (CoS) from your employer</li>
+                            <li style="margin-bottom: 15px;">🗣️ Proof of English proficiency (IELTS or equivalent)</li>
+                            <li style="margin-bottom: 15px;">✅ Professional registration with UK regulators (NMC, HCPC, or relevant body)</li>
+                            <li style="margin-bottom: 15px;">📚 Proof of qualifications and work experience</li>
+                            <li>🩺 Tuberculosis test results (if required)</li>
+                        </ul>
+
+                        <p style="color: var(--color-text); margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 5px; border-left: 4px solid #ffc107;">
+                            <strong>💡 Tip:</strong> Keep both digital and physical copies of every document. Organize them in a secure folder—you'll need them at multiple stages of the process.
+                        </p>
+                    </div>
+
+                    <!-- Section 4: Submit Your Visa Application -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">4. Submit Your Visa Application</h3>
+
+                        <ol style="color: var(--color-text); line-height: 2;">
+                            <li style="margin-bottom: 15px;">📱 Apply online through the UK government visa portal.</li>
+                            <li style="margin-bottom: 15px;">💰 Pay the required visa fees and healthcare surcharge (if applicable).</li>
+                            <li style="margin-bottom: 15px;">📸 Book a biometric appointment to provide fingerprints and photos.</li>
+                            <li>⏳ Wait for a decision—processing can take 3–8 weeks depending on your visa type.</li>
+                        </ol>
+
+                        <p style="color: var(--color-text); margin-top: 20px; padding: 15px; background: #e7f3ff; border-radius: 5px; border-left: 4px solid var(--color-accent);">
+                            <strong>⚠️ Processing Times:</strong> Standard processing takes 3-8 weeks. Priority services (additional fee) can reduce this to 5 business days. Plan accordingly and apply early.
+                        </p>
+                    </div>
+
+                    <!-- Section 5: Arrival & Settling In -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">5. Arrival & Settling In</h3>
+                        <p style="color: var(--color-text); margin-bottom: 20px; line-height: 1.8;">
+                            Once your visa is approved:
+                        </p>
+
+                        <ul style="color: var(--color-text); line-height: 2;">
+                            <li style="margin-bottom: 15px;">🎫 You may receive a Biometric Residence Permit (BRP) on arrival.</li>
+                            <li style="margin-bottom: 15px;">🏥 Register with your professional body (NMC, HCPC) if not already done.</li>
+                            <li style="margin-bottom: 15px;">🏦 Open a UK bank account, get a National Insurance number, and arrange accommodation.</li>
+                            <li>👋 Attend employer orientation and any required induction programs.</li>
+                        </ul>
+
+                        <p style="color: var(--color-text); margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 5px; border-left: 4px solid #ffc107;">
+                            <strong>💡 Tip:</strong> Start your banking and accommodation arrangements BEFORE arrival if possible. Many services can be initiated online, making your transition smoother.
+                        </p>
+                    </div>
+
+                    <!-- Section 6: Additional Tips for Success -->
+                    <div style="background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 22px;">6. Additional Tips for Success</h3>
+
+                        <div style="background: #e8f5e9; border-left: 4px solid #4caf50; padding: 15px; margin-bottom: 20px;">
+                            <p style="color: var(--color-text); margin: 0;"><strong>🚀 Start Early:</strong> Start your visa process as early as possible—it can take months from job offer to arrival.</p>
+                        </div>
+
+                        <div style="background: #e8f5e9; border-left: 4px solid #4caf50; padding: 15px; margin-bottom: 20px;">
+                            <p style="color: var(--color-text); margin: 0;"><strong>✓ Verify Everything:</strong> Double-check your employer's sponsorship license number online through the UK Home Office website.</p>
+                        </div>
+
+                        <div style="background: #e8f5e9; border-left: 4px solid #4caf50; padding: 15px; margin-bottom: 20px;">
+                            <p style="color: var(--color-text); margin: 0;"><strong>📚 Stay Current:</strong> Maintain your professional certifications and CPD—UK immigration may check credentials during processing.</p>
+                        </div>
+
+                        <div style="background: #e8f5e9; border-left: 4px solid #4caf50; padding: 15px;">
+                            <p style="color: var(--color-text); margin: 0;"><strong>🤝 Consider Agencies:</strong> For short-term roles, consider agencies that specialize in international healthcare placements—they handle much of the visa process.</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Line / Conclusion -->
+                    <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 30px; border-radius: 8px; color: white;">
+                        <h3 style="color: white; margin-bottom: 15px;">🎯 Bottom Line</h3>
+                        <p style="margin: 0; font-size: 16px; line-height: 1.8;">
+                            Getting your visa and work permit is a structured process, but with proper preparation, the paperwork becomes manageable. Securing the right sponsorship, registering with the relevant professional body, and keeping your documentation organized will give you the smoothest pathway to working overseas in healthcare. Start early, stay organized, and reach out to your employer or a visa specialist if you need guidance.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 50px 30px; border-radius: 12px; color: white; text-align: center;">
+                    <h2 style="color: white; margin-bottom: 20px;">Latest Blog Posts</h2>
+                    <div class="grid-3" style="margin-top: 30px;">
+                        <div style="text-align: left;">
+                            <h4 style="color: white; margin-bottom: 10px;">5 Essential Skills for International Healthcare Roles</h4>
+                            <p style="font-size: 14px; opacity: 0.9;">Learn the top skills employers seek when hiring international healthcare staff.</p>
+                        </div>
+                        <div style="text-align: left;">
+                            <h4 style="color: white; margin-bottom: 10px;">Navigating Work-Life Balance in Healthcare</h4>
+                            <p style="font-size: 14px; opacity: 0.9;">Expert tips for maintaining health and well-being while working in demanding healthcare environments.</p>
+                        </div>
+                        <div style="text-align: left;">
+                            <h4 style="color: white; margin-bottom: 10px;">Future of Healthcare Staffing</h4>
+                            <p style="font-size: 14px; opacity: 0.9;">Insights into emerging trends and opportunities in global healthcare recruitment.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div id="page-contact" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">Contact Us</h1>
+                <div class="grid-2">
+                    <div>
+                        <h3 style="margin-bottom: 30px; font-size: 24px;">Get In Touch</h3>
+                        <div style="display: grid; gap: 30px;">
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--color-accent);">� Email</h4>
+                                <p style="color: var(--color-text-light);">recruitment.ubn@outlook.com</p>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--color-accent);">📞 Phone</h4>
+                                <p style="color: var(--color-text-light);">+44 (203) 026-0312</p>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--color-accent);">� WhatsApp</h4>
+                                <p style="color: var(--color-text-light);">+27 670-486-798</p>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--color-accent);">⏰ Business Hours</h4>
+                                <p style="color: var(--color-text-light);">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed (Emergency: 24/7)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: 30px;">Send Us a Message</h3>
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>I am a... *</label>
+                                <select name="type" required>
+                                    <option value="">Select...</option>
+                                    <option value="Healthcare Professional">Healthcare Professional</option>
+                                    <option value="Employer">Employer/Institution</option>
+                                    <option value="Agency">Staffing Agency</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea name="message" placeholder="Please share your inquiry or feedback..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent" style="width: 100%;">Send Message</button>
+                        </form>
+                        <div id="contactMessage"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- MEDICAL TRAVEL PAGE -->
+        <div id="page-medical-travel" class="page">
+            <div style="margin-top: 70px;"></div>
+            
+            <!-- Hero Section -->
+            <section class="hero" style="background: linear-gradient(135deg, #1e5f8a 0%, #3b9ec9 50%, #7dd3e8 100%); margin-top: 0;">
+                <div class="hero-content">
+                    <h1>Seamless Medical Travel & Caregiver Support</h1>
+                    <p>Expert Coordination for Patients – Safe, Professional Care Throughout Your Medical Journey</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToElement('medical-inquiry-form')">Plan Your Journey</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Medical Travel Service -->
+            <section class="section">
+                <div class="grid-2">
+                    <div>
+                        <h2 style="font-size: 32px; margin-bottom: 20px;">About Our Medical Travel Service</h2>
+                        <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 20px;">
+                            Our Medical Travel & Patient Concierge service is designed to simplify international medical travel. We coordinate licensed caregivers, hospital admissions, safe transport, and visa assistance, ensuring every step of the journey is organized and reliable.
+                        </p>
+                        <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 20px;">
+                            All care is provided by qualified professionals — UBN acts as the trusted coordinator between you, healthcare providers, and support services.
+                        </p>
+                    </div>
+                    <div style="position: relative;">
+                        <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 40px; border-radius: 12px; color: white;">
+                            <h3 style="color: white; margin-bottom: 30px; text-align: center; font-size: 24px;">Medical Travel Process</h3>
+                            <div style="display: grid; gap: 25px;">
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 700; font-size: 18px;">✈️</div>
+                                    <div>
+                                        <h4 style="color: white; margin-bottom: 5px;">Inquiry & Consultation</h4>
+                                        <p style="font-size: 14px; opacity: 0.9;">Submit your medical travel request via our online form</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 700; font-size: 18px;">📋</div>
+                                    <div>
+                                        <h4 style="color: white; margin-bottom: 5px;">Customized Plan</h4>
+                                        <p style="font-size: 14px; opacity: 0.9;">We create a personalized plan outlining caregiver support, hospital coordination, transport, and visa requirements</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 700; font-size: 18px;">👨‍⚕️</div>
+                                    <div>
+                                        <h4 style="color: white; margin-bottom: 5px;">Safe Coordination</h4>
+                                        <p style="font-size: 14px; opacity: 0.9;">Once our service is officially active, we'll manage all bookings with licensed caregivers, hospitals, and transport providers</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                    <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 700; font-size: 18px;">🏥</div>
+                                    <div>
+                                        <h4 style="color: white; margin-bottom: 5px;">Support Throughout</h4>
+                                        <p style="font-size: 14px; opacity: 0.9;">From departure to return, licensed professionals provide care and support every step of the way</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services We Coordinate -->
+            <section class="section" style="background: #f8fafc;">
+                <h2 class="section-title">Services We Coordinate</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-icon">👩‍⚕️</div>
+                        <h3>Licensed Caregiver Escorts</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Professional caregivers or nurse escorts accompany patients throughout their medical journey for comfort and support.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏥</div>
+                        <h3>Hospital Coordination</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Pre-admission planning, appointment scheduling, and coordination with healthcare providers.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🚗</div>
+                        <h3>Transport Arrangements</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Ground and air transport solutions arranged with reliable, professional providers.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📄</div>
+                        <h3>Visa & Documentation</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Guidance and support with travel documents, medical visas, and immigration requirements.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🗂️</div>
+                        <h3>Travel Planning</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Complete itinerary planning considering medical appointments, travel schedules, and rest periods.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📞</div>
+                        <h3>24/7 Support</h3>
+                        <p style="color: var(--color-text-light); margin-top: 10px;">Emergency support and assistance available throughout your entire medical travel journey.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose UBN -->
+            <section class="section">
+                <h2 class="section-title">Why Choose UBN for Medical Travel</h2>
+                <div class="grid-2">
+                    <div style="display: grid; gap: 25px;">
+                        <div style="display: flex; gap: 15px;">
+                            <div style="font-size: 32px; flex-shrink: 0;">✓</div>
+                            <div>
+                                <h4 style="margin-bottom: 8px;">Professional Coordination</h4>
+                                <p style="color: var(--color-text-light); font-size: 14px;">All aspects of medical travel managed by licensed professionals</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 15px;">
+                            <div style="font-size: 32px; flex-shrink: 0;">✓</div>
+                            <div>
+                                <h4 style="margin-bottom: 8px;">Network of Trusted Providers</h4>
+                                <p style="color: var(--color-text-light); font-size: 14px;">Licensed caregivers and healthcare providers verified and trusted</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 15px;">
+                            <div style="font-size: 32px; flex-shrink: 0;">✓</div>
+                            <div>
+                                <h4 style="margin-bottom: 8px;">Transparent Process</h4>
+                                <p style="color: var(--color-text-light); font-size: 14px;">Clear communication and transparent pricing for all patients and families</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 15px;">
+                            <div style="font-size: 32px; flex-shrink: 0;">✓</div>
+                            <div>
+                                <h4 style="margin-bottom: 8px;">Stress-Free Experience</h4>
+                                <p style="color: var(--color-text-light); font-size: 14px;">Step-by-step support ensures a smooth, organized medical travel experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 40px; border-radius: 12px; color: white; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 25px; font-size: 26px;">Ready to Plan Your Medical Travel?</h3>
+                        <p style="margin-bottom: 30px; opacity: 0.95;">Start with a consultation to understand your needs and create a personalized travel plan.</p>
+                        <button class="btn btn-primary" onclick="scrollToElement('medical-inquiry-form')">Get Started</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Inquiry Form -->
+            <section class="section" id="medical-inquiry-form">
+                <h2 class="section-title">Plan Your Medical Travel Today</h2>
+                <p class="section-subtitle">Submit your inquiry for a personalized consultation and travel plan</p>
+                
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <div class="card">
+                        <form id="medicalTravelForm" onsubmit="handleMedicalTravelSubmit(event)">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Country of Origin *</label>
+                                <input type="text" name="countryOfOrigin" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Destination Hospital / City *</label>
+                                <input type="text" name="destinationHospital" required placeholder="E.g., Mayo Clinic USA, Johns Hopkins, London Bridge Hospital">
+                            </div>
+                            <div class="form-group">
+                                <label>Medical Needs / Treatment Type *</label>
+                                <input type="text" name="medicalNeeds" required placeholder="E.g., Cardiac surgery, Orthopedic procedure, Specialist consultation">
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Travel Dates *</label>
+                                <input type="text" name="travelDates" required placeholder="E.g., March 2026, April-May 2026">
+                            </div>
+                            <div class="form-group">
+                                <label>Contact Email *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Contact Phone / WhatsApp *</label>
+                                <input type="tel" name="phone" required placeholder="Include country code">
+                            </div>
+                            <div class="form-group">
+                                <label>Additional Information (optional)</label>
+                                <textarea name="additionalInfo" placeholder="Any special requirements, companion details, or additional information..."></textarea>
+                            </div>
+                            <div class="checkbox-group" style="margin-bottom: 20px;">
+                                <input type="checkbox" name="medicalConsent" id="medicalConsent" required>
+                                <label for="medicalConsent" style="margin-bottom: 0;">I understand this is a consultation service and agree to the terms</label>
+                            </div>
+                            <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Inquiry for Consultation</button>
+                        </form>
+                        <div id="medicalTravelMessage"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FAQ PAGE -->
+        <div id="page-faqs" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">Frequently Asked Questions</h1>
+                <p class="section-subtitle">Find answers to common questions about UBN services, recruitment process, and how we can help you</p>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>What is Ultimate Baby Nurses (UBN)?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;">Ultimate Baby Nurses (UBN) provides professional recruitment support and virtual administrative services for organizations in the healthcare and care sectors. Our services help companies identify potential candidates, streamline recruitment processes, and manage administrative tasks remotely.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>What services does UBN provide?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0; margin-bottom: 12px;"><strong>Our services include:</strong></p>
+                            <ul style="color: var(--color-text-light); margin: 0; padding-left: 20px;">
+                                <li>Recruitment support and candidate sourcing</li>
+                                <li>Candidate screening and shortlisting</li>
+                                <li>Coordination of interviews between employers and candidates</li>
+                                <li>Virtual administrative assistance</li>
+                                <li>Recruitment-related communication support</li>
+                                <li>Social media support to attract caregivers and healthcare workers</li>
+                            </ul>
+                            <p style="color: var(--color-text-light); margin: 12px 0 0 0;"><em>The exact services provided are determined based on the needs of each client.</em></p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Does UBN guarantee employment for candidates?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;"><strong>No.</strong> Ultimate Baby Nurses (UBN) assists in connecting potential candidates with employers. Hiring decisions are made entirely by the employer, and we cannot guarantee employment or job placement.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>How can employers work with UBN?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;">Employers can contact us through our website or email to discuss their recruitment or administrative support needs. Once we understand the requirements, we will agree on a suitable service arrangement tailored to your organization's specific needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>What types of healthcare professionals can UBN help source?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0; margin-bottom: 12px;"><strong>Depending on the employer's needs, we assist in sourcing candidates such as:</strong></p>
+                            <ul style="color: var(--color-text-light); margin: 0; padding-left: 20px;">
+                                <li>Care assistants</li>
+                                <li>Support workers</li>
+                                <li>Healthcare assistants</li>
+                                <li>Nursing support staff</li>
+                                <li>Newborn care specialists</li>
+                                <li>Other healthcare and care professionals</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>How does the recruitment support process work?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0; margin-bottom: 12px;"><strong>Typically, the process includes:</strong></p>
+                            <ol style="color: var(--color-text-light); margin: 0; padding-left: 20px;">
+                                <li>Understanding the employer's staffing needs</li>
+                                <li>Sourcing potential candidates from our network</li>
+                                <li>Screening and shortlisting the most suitable applicants</li>
+                                <li>Coordinating interviews between employers and candidates</li>
+                                <li>The employer makes the final hiring decision</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Do you offer international recruitment services?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;">UBN may assist in identifying candidates from different locations. However, employers are responsible for ensuring compliance with all immigration, employment, and visa regulations where applicable. We support the recruitment process but do not handle legal or visa-related matters.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 8 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Does UBN provide visa sponsorship or immigration services?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;"><strong>No.</strong> Ultimate Baby Nurses (UBN) does not provide immigration advice, visa sponsorship, or legal services. These matters must be handled directly by employers or appropriate legal professionals. We focus on the recruitment and candidate matching process.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 9 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>How are service fees determined?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;">Service fees are determined based on the scope of services required. Fees and payment arrangements are agreed upon between Ultimate Baby Nurses (UBN) and the client before services begin. We provide transparent pricing based on your specific needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 10 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>How can candidates submit their information?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;">Candidates interested in opportunities can submit their CVs or professional information through our website's Candidates page or contact us directly via email. Submitted information will be reviewed and shared with potential employers where appropriate and relevant to their job requirements.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 11 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Is my personal information secure?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0;">Ultimate Baby Nurses (UBN) takes reasonable measures to protect personal information and uses it only for recruitment and administrative purposes as outlined in our Privacy Policy. We comply with UK GDPR and data protection regulations to ensure your information is handled responsibly and confidentially.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 12 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <button class="faq-question" onclick="toggleFaq(this)" style="width: 100%; padding: 20px; background: #f8fafc; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <span>How can I contact Ultimate Baby Nurses?</span>
+                            <span class="faq-icon" style="font-size: 18px;">+</span>
+                        </button>
+                        <div class="faq-answer" style="display: none; padding: 20px; background: white; border-top: 1px solid #e2e8f0;">
+                            <p style="color: var(--color-text-light); margin: 0; margin-bottom: 10px;"><strong>For general inquiries, recruitment support, or service discussions, you can reach us through:</strong></p>
+                            <ul style="color: var(--color-text-light); margin: 0; padding-left: 20px;">
+                                <li><strong>Email:</strong> recruitment.ubn@outlook.com</li>
+                                <li><strong>WhatsApp:</strong> +44 (203) 026-0312 or +27 670-486-798</li>
+                                <li><strong>Website:</strong> Use the Contact page on our site</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%); padding: 40px 30px; border-radius: 12px; color: white; text-align: center; margin-top: 50px;">
+                        <h3 style="color: white; margin-bottom: 15px;">Still Have Questions?</h3>
+                        <p style="margin-bottom: 20px; opacity: 0.95;">Contact us directly or visit our contact page to send a message to our team</p>
+                        <button class="btn" onclick="navigateTo('contact')" style="background: white; color: var(--color-primary); font-weight: 600; border: none; padding: 12px 30px; border-radius: 6px; cursor: pointer;">Contact Us Now</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TERMS OF SERVICE PAGE -->
+        <div id="page-terms-of-service" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">Terms of Service</h1>
+                <div style="max-width: 900px; margin: 0 auto; line-height: 1.8;">
+                    
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">1. Introduction</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Welcome to Ultimate Baby Nurses (UBN). These Terms of Service govern the use of our website and the services provided by Ultimate Baby Nurses. By accessing this website or engaging with our services, you agree to comply with and be bound by these terms.
+                    </p>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        If you do not agree with these Terms of Service, please discontinue use of our website and services.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">2. About Ultimate Baby Nurses</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Ultimate Baby Nurses (UBN) provides professional support services for healthcare and care-sector organizations. Our services may include virtual administrative support, recruitment sourcing, candidate screening, communication coordination, and social media assistance for recruitment purposes.
+                    </p>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        UBN operates as a remote service provider supporting organizations in the healthcare and care industries.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">3. Scope of Services</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;">Services provided by Ultimate Baby Nurses (UBN) may include but are not limited to:</p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li>Recruitment support and candidate sourcing</li>
+                        <li>Candidate screening and shortlisting</li>
+                        <li>Coordination of interviews between employers and candidates</li>
+                        <li>Virtual administrative assistance</li>
+                        <li>Management of recruitment-related communications</li>
+                        <li>Social media support related to recruitment and workforce visibility</li>
+                    </ul>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        The exact scope of services will be determined through a separate agreement or communication between UBN and the client.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">4. No Employment Guarantee</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Ultimate Baby Nurses (UBN) facilitates introductions between employers and potential candidates. However, we do not guarantee employment, job placement, or hiring outcomes. All hiring decisions remain solely the responsibility of the employer.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">5. Candidate Information</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;">Candidates who submit information, including CVs or other documentation, confirm that:</p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li>The information they provide is accurate and truthful</li>
+                        <li>They consent to their information being shared with potential employers for recruitment purposes</li>
+                        <li>Ultimate Baby Nurses (UBN) is not responsible for inaccuracies or misrepresentations provided by candidates</li>
+                    </ul>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">6. Client Responsibilities</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;">Organizations using the services of Ultimate Baby Nurses (UBN) agree to:</p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li>Provide accurate job descriptions and role requirements</li>
+                        <li>Conduct their own background checks and candidate verification</li>
+                        <li>Ensure compliance with all applicable employment and labor regulations</li>
+                    </ul>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        UBN is not responsible for hiring decisions, employment contracts, or employment-related disputes.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">7. Service Fees</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Services provided by Ultimate Baby Nurses (UBN) are subject to agreed service fees. Fees, payment terms, and service arrangements will be determined through direct agreement between UBN and the client prior to the commencement of services.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">8. Independent Service Provider</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Ultimate Baby Nurses (UBN) operates as an independent service provider. UBN does not act as an employer, immigration advisor, or visa sponsor. We do not provide immigration, legal, or employment law advice.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">9. Limitation of Liability</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;">Ultimate Baby Nurses (UBN) shall not be held liable for:</p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li>Hiring decisions made by employers</li>
+                        <li>Employment outcomes or disputes between employers and candidates</li>
+                        <li>Misrepresentation by candidates or employers</li>
+                        <li>Business losses resulting from decisions made by clients</li>
+                    </ul>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Our role is limited to providing recruitment support and administrative services.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">10. Confidentiality</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Ultimate Baby Nurses (UBN) respects the confidentiality of both clients and candidates. Information shared through our website or services will be handled professionally and used only for recruitment and administrative purposes.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">11. Changes to Terms</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Ultimate Baby Nurses (UBN) reserves the right to modify or update these Terms of Service at any time. Any changes will be posted on this page and will take effect immediately upon publication.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">12. Contact Information</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 10px;">For any questions regarding these Terms of Service, please contact:</p>
+                    <p style="color: var(--color-text-light); margin-bottom: 5px;"><strong>Ultimate Baby Nurses (UBN)</strong></p>
+                    <p style="color: var(--color-text-light); margin-bottom: 5px;">Email: <a href="mailto:recruitment.ubn@outlook.com" style="color: var(--color-accent); text-decoration: none;">recruitment.ubn@outlook.com</a></p>
+                    <p style="color: var(--color-text-light);">Phone: +44 (203) 026-0312</p>
+
+                    <p style="color: var(--color-text-light); margin-top: 40px; font-style: italic; font-size: 14px;">
+                        Last Updated: March 2026
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- PRIVACY POLICY PAGE -->
+        <div id="page-privacy-policy" class="page">
+            <div style="margin-top: 70px;"></div>
+            <section class="section">
+                <h1 class="section-title">Privacy Policy</h1>
+                <div style="max-width: 900px; margin: 0 auto; line-height: 1.8;">
+                    
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">1. Introduction</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Ultimate Baby Nurses (UBN) is committed to protecting your privacy and ensuring you have a positive experience on our website and when using our services. This Privacy Policy outlines how we collect, use, protect, and share your personal information.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">2. Information We Collect</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;"><strong>We collect information you voluntarily provide, including:</strong></p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li>Full name, email address, and phone number (via registration forms)</li>
+                        <li>Professional information: CV, work history, qualifications, and certifications</li>
+                        <li>Employment preferences: preferred roles, locations, and availability</li>
+                        <li>For employers: company information, job requirements, and contact details</li>
+                        <li>Communication records: messages, inquiries, and correspondence</li>
+                    </ul>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        <strong>Automatically collected information:</strong> We may collect technical information such as IP address, browser type, device information, and pages visited (via cookies and analytics).
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">3. How We Use Your Information</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;">We use the information we collect for the following purposes:</p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li>To facilitate recruitment connections between candidates and employers</li>
+                        <li>To verify candidate qualifications and professional details</li>
+                        <li>To communicate with you regarding your registration, inquiries, and job opportunities</li>
+                        <li>To process medical travel and concierge service inquiries</li>
+                        <li>To improve our website, services, and user experience</li>
+                        <li>To send updates, newsletters, and relevant job notifications (with your consent)</li>
+                        <li>To comply with legal obligations and protect against fraud</li>
+                    </ul>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">4. Sharing Your Information</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;">
+                        <strong>We share your information only when necessary:</strong>
+                    </p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li><strong>Candidate Information:</strong> With potential employers who are actively recruiting, with your explicit consent</li>
+                        <li><strong>Employer Information:</strong> With qualified candidates matching job requirements</li>
+                        <li><strong>Service Providers:</strong> With third-party service providers who assist us (communication, hosting, analytics)</li>
+                        <li><strong>Legal Requirements:</strong> When required by law or to protect our rights and safety</li>
+                    </ul>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        We do not sell your personal information to third parties.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">5. Data Protection & Security</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">6. Data Retention</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this policy. You may request deletion of your account and associated data at any time by contacting us.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">7. Your Rights</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 15px;">You have the right to:</p>
+                    <ul style="color: var(--color-text-light); margin-bottom: 20px; margin-left: 20px; list-style: disc;">
+                        <li>Access the personal information we hold about you</li>
+                        <li>Request correction of inaccurate information</li>
+                        <li>Request deletion of your information</li>
+                        <li>Opt-out of marketing communications</li>
+                        <li>Withdraw consent for data processing</li>
+                        <li>Request a copy of your data in a portable format</li>
+                    </ul>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">8. Cookies & Tracking</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Our website may use cookies to enhance user experience and gather analytics. You can control cookie settings through your browser. We do not use cookies for tracking beyond our website.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">9. Third-Party Links</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Our website may contain links to third-party websites. We are not responsible for their privacy practices. We encourage you to review their privacy policies before providing any information.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">10. Children's Privacy</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Our services are not intended for individuals under 18 years of age. We do not knowingly collect information from children. If we become aware of such information, we will delete it immediately.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">11. International Data Transfers</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        Ultimate Baby Nurses operates internationally. Your information may be transferred to, stored in, and processed in countries other than your country of residence. By providing information, you consent to such transfers.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">12. Policy Updates</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 20px;">
+                        We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated effective date. Your continued use of our website constitutes acceptance of the updated policy.
+                    </p>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 15px; font-size: 20px;">13. Contact Information</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 10px;">For privacy-related questions or to exercise your data rights, please contact:</p>
+                    <p style="color: var(--color-text-light); margin-bottom: 5px;"><strong>Ultimate Baby Nurses (UBN)</strong></p>
+                    <p style="color: var(--color-text-light); margin-bottom: 5px;">Email: <a href="mailto:recruitment.ubn@outlook.com" style="color: var(--color-accent); text-decoration: none;">recruitment.ubn@outlook.com</a></p>
+                    <p style="color: var(--color-text-light); margin-bottom: 5px;">Phone: +44 (203) 026-0312</p>
+                    <p style="color: var(--color-text-light);">WhatsApp: +27 670-486-798</p>
+
+                    <p style="color: var(--color-text-light); margin-top: 40px; font-style: italic; font-size: 14px;">
+                        Last Updated: March 2026<br>
+                        Effective Date: March 2026
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- ADMIN PAGE - MOVED TO SEPARATE ADMIN.HTML FILE -->
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Ultimate Baby Nurses</h4>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">Connecting skilled healthcare professionals with global opportunities for a healthier world.</p>
+                <div style="display: flex; gap: 15px; margin-top: 15px;">
+                    <a href="#" style="display: inline-block; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">f</a>
+                    <a href="#" style="display: inline-block; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">T</a>
+                    <a href="#" style="display: inline-block; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">L</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a onclick="navigateTo('home')">Home</a></li>
+                    <li><a onclick="navigateTo('about')">About Us</a></li>
+                    <li><a onclick="navigateTo('candidates')">For Candidates</a></li>
+                    <li><a onclick="navigateTo('employers')">For Employers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a onclick="navigateTo('resources')">Blog & Resources</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a onclick="navigateTo('privacy-policy')">Privacy Policy</a></li>
+                    <li><a onclick="navigateTo('terms-of-service')">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p style="font-size: 14px; opacity: 0.8;">recruitment.ubn@outlook.com</p>
+                <p style="font-size: 14px; opacity: 0.8;">+44 (203) 026-0312</p>
+                <p style="font-size: 14px; opacity: 0.8;">WhatsApp: +27 670-486-798</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ultimate Baby Nurses. All rights reserved. | Connecting Healthcare Professionals Worldwide</p>
+        </div>
+    </footer>
+
+    <script>
+        // Configuration
+        const CONFIG = {
+            storageKey: 'ubn_form_data',
+            candidatePrefix: 'UBN-C',
+            employerPrefix: 'UBN-E',
+            inquiryPrefix: 'UBN-I',
+            formspreeEndpoint: 'https://formspree.io/f/xyzabjnl', // Replace with your Formspree ID
+            adminEmail: 'recruitment.ubn@outlook.com'
+        };
+
+        // Initialize data storage
+        let formData = {
+            candidates: [],
+            employers: [],
+            inquiries: []
+        };
+
+        // Load data from localStorage on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadDataFromStorage();
+            updateAdminStats();
+            renderAdminTable();
+        });
+
+        // Navigation Function
+        function navigateTo(page) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            
+            // Show selected page
+            const targetPage = document.getElementById(`page-${page}`);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                
+                // Update navbar
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                event.target.classList.add('active');
+                
+                // Close mobile menu
+                document.getElementById('navMenu').classList.remove('active');
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('navToggle').addEventListener('click', () => {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+
+        // Form Handlers
+        function handleCandidateSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formDataObj = new FormData(form);
+            
+            const candidate = {
+                id: `${CONFIG.candidatePrefix}-${Date.now()}`,
+                fullName: formDataObj.get('fullName'),
+                country: formDataObj.get('country'),
+                email: formDataObj.get('email'),
+                whatsapp: formDataObj.get('whatsapp'),
+                profession: formDataObj.get('profession'),
+                experience: formDataObj.get('experience'),
+                currentEmployer: formDataObj.get('currentEmployer'),
+                skills: formDataObj.get('skills'),
+                availability: formDataObj.get('availability'),
+                locations: formDataObj.get('locations'),
+                cvFile: window.selectedCVFile ? window.selectedCVFile.name : 'No file uploaded',
+                cvFileInfo: window.selectedCVFile || null,
+                status: 'Pending',
+                date: new Date().toISOString()
+            };
+
+            // Send email notification
+            sendCandidateEmail(candidate);
+
+            formData.candidates.push(candidate);
+            saveDataToStorage();
+            updateAdminStats();
+            renderAdminTable();
+            
+            // Reset file upload state
+            window.selectedCVFile = null;
+            document.getElementById('fileUploadStatus').innerHTML = '';
+            
+            showToast('✓ Registration successful! We will contact you soon.', 'success');
+            form.reset();
+            document.getElementById('candidateMessage').innerHTML = '<p class="success-message">✓ Thank you for registering! Check your email for confirmation.</p>';
+        }
+
+        function handleEmployerSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formDataObj = new FormData(form);
+            
+            const employer = {
+                id: `${CONFIG.employerPrefix}-${Date.now()}`,
+                companyName: formDataObj.get('companyName'),
+                contactPerson: formDataObj.get('contactPerson'),
+                email: formDataObj.get('email'),
+                country: formDataObj.get('country'),
+                roleRequired: formDataObj.get('roleRequired'),
+                staffCount: formDataObj.get('staffCount'),
+                skills: formDataObj.get('skills'),
+                visaSponsorship: formDataObj.get('visaSponsorship'),
+                status: 'Pending',
+                date: new Date().toISOString()
+            };
+
+            // Send email notification
+            sendEmployerEmail(employer);
+
+            formData.employers.push(employer);
+            saveDataToStorage();
+            updateAdminStats();
+            renderAdminTable();
+            
+            showToast('✓ Job posting submitted! We will review and contact you shortly.', 'success');
+            form.reset();
+            document.getElementById('employerMessage').innerHTML = '<p class="success-message">✓ Thank you! Your job posting has been submitted for review.</p>';
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formDataObj = new FormData(form);
+            
+            const inquiry = {
+                id: `${CONFIG.inquiryPrefix}-${Date.now()}`,
+                fullName: formDataObj.get('fullName'),
+                email: formDataObj.get('email'),
+                type: formDataObj.get('type'),
+                message: formDataObj.get('message'),
+                status: 'Pending',
+                date: new Date().toISOString()
+            };
+
+            // Send email notification
+            sendContactEmail(inquiry);
+
+            formData.inquiries.push(inquiry);
+            saveDataToStorage();
+            updateAdminStats();
+            renderAdminTable();
+            
+            showToast('✓ Message sent! We will get back to you within 24 hours.', 'success');
+            form.reset();
+            document.getElementById('contactMessage').innerHTML = '<p class="success-message">✓ Thank you for contacting us. Our team will respond shortly.</p>';
+        }
+
+        function handleMedicalTravelSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formDataObj = new FormData(form);
+            
+            const medicalTravel = {
+                id: `UBN-MT-${Date.now()}`,
+                fullName: formDataObj.get('fullName'),
+                countryOfOrigin: formDataObj.get('countryOfOrigin'),
+                destinationHospital: formDataObj.get('destinationHospital'),
+                medicalNeeds: formDataObj.get('medicalNeeds'),
+                travelDates: formDataObj.get('travelDates'),
+                email: formDataObj.get('email'),
+                phone: formDataObj.get('phone'),
+                additionalInfo: formDataObj.get('additionalInfo'),
+                status: 'Pending',
+                date: new Date().toISOString()
+            };
+
+            // Send email notification
+            sendMedicalTravelEmail(medicalTravel);
+
+            if (!formData.medicalTravel) {
+                formData.medicalTravel = [];
+            }
+            formData.medicalTravel.push(medicalTravel);
+            saveDataToStorage();
+            
+            showToast('✓ Inquiry submitted! Our medical travel team will contact you within 24 hours.', 'success');
+            form.reset();
+            document.getElementById('medicalTravelMessage').innerHTML = '<p class="success-message">✓ Thank you for your inquiry! We will review your medical travel request and contact you shortly with a personalized consultation plan.</p>';
+        }
+
+        function handlePortalLogin(e) {
+            e.preventDefault();
+            showToast('Portal authentication coming soon!', 'warning');
+        }
+
+        // Email sending functions
+        function sendCandidateEmail(candidate) {
+            const cvInfo = candidate.cvFileInfo ? 
+                `File Name: ${candidate.cvFileInfo.name}
+File Size: ${(candidate.cvFileInfo.size / 1024).toFixed(2)}KB
+Upload Date: ${candidate.cvFileInfo.uploadDate}` 
+                : 'No file uploaded';
+
+            const emailContent = `
+NEW CANDIDATE REGISTRATION
+
+Candidate ID: ${candidate.id}
+Full Name: ${candidate.fullName}
+Country: ${candidate.country}
+Email: ${candidate.email}
+WhatsApp: ${candidate.whatsapp}
+Healthcare Profession: ${candidate.profession}
+Years of Experience: ${candidate.experience}
+Current Employer: ${candidate.currentEmployer}
+Key Skills: ${candidate.skills}
+Availability: ${candidate.availability}
+Preferred Locations: ${candidate.locations}
+
+CV/RESUME FILE:
+${cvInfo}
+
+Submission Date: ${candidate.date}
+
+Please review this candidate and follow up accordingly.
+
+---
+This is an automated message from Ultimate Baby Nurses website.
+            `;
+
+            sendEmail({
+                email: CONFIG.adminEmail,
+                subject: `New Candidate Registration - ${candidate.fullName}`,
+                message: emailContent,
+                from_email: candidate.email,
+                reply_to: candidate.email
+            });
+        }
+
+        function sendEmployerEmail(employer) {
+            const emailContent = `
+NEW JOB POSTING SUBMITTED
+
+Employer ID: ${employer.id}
+Company Name: ${employer.companyName}
+Contact Person: ${employer.contactPerson}
+Email: ${employer.email}
+Country: ${employer.country}
+Healthcare Role Required: ${employer.roleRequired}
+Number of Staff Needed: ${employer.staffCount}
+Required Skills & Qualifications: ${employer.skills}
+Visa Sponsorship Available: ${employer.visaSponsorship}
+Submission Date: ${employer.date}
+
+Please review this job posting and process accordingly.
+
+---
+This is an automated message from Ultimate Baby Nurses website.
+            `;
+
+            sendEmail({
+                email: CONFIG.adminEmail,
+                subject: `New Job Posting - ${employer.companyName}`,
+                message: emailContent,
+                from_email: employer.email,
+                reply_to: employer.email
+            });
+        }
+
+        function sendContactEmail(inquiry) {
+            const emailContent = `
+NEW CONTACT INQUIRY
+
+Inquiry ID: ${inquiry.id}
+Full Name: ${inquiry.fullName}
+Email: ${inquiry.email}
+Type: ${inquiry.type}
+Message: ${inquiry.message}
+Submission Date: ${inquiry.date}
+
+Please review this inquiry and follow up accordingly.
+
+---
+This is an automated message from Ultimate Baby Nurses website.
+            `;
+
+            sendEmail({
+                email: CONFIG.adminEmail,
+                subject: `New Contact Inquiry - ${inquiry.fullName}`,
+                message: emailContent,
+                from_email: inquiry.email,
+                reply_to: inquiry.email
+            });
+        }
+
+        function sendMedicalTravelEmail(medicalTravel) {
+            const emailContent = `
+NEW MEDICAL TRAVEL INQUIRY
+
+Inquiry ID: ${medicalTravel.id}
+Full Name: ${medicalTravel.fullName}
+Country of Origin: ${medicalTravel.countryOfOrigin}
+Destination Hospital/City: ${medicalTravel.destinationHospital}
+Medical Needs/Treatment Type: ${medicalTravel.medicalNeeds}
+Preferred Travel Dates: ${medicalTravel.travelDates}
+Email: ${medicalTravel.email}
+Phone: ${medicalTravel.phone}
+Additional Information: ${medicalTravel.additionalInfo}
+Submission Date: ${medicalTravel.date}
+
+Please review this medical travel request and provide consultation.
+
+---
+This is an automated message from Ultimate Baby Nurses website.
+            `;
+
+            sendEmail({
+                email: CONFIG.adminEmail,
+                subject: `New Medical Travel Inquiry - ${medicalTravel.fullName}`,
+                message: emailContent,
+                from_email: medicalTravel.email,
+                reply_to: medicalTravel.phone
+            });
+        }
+
+        function sendEmail(emailData) {
+            // Using Formspree API for email delivery
+            fetch(CONFIG.formspreeEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: emailData.from_email,
+                    name: emailData.email,
+                    subject: emailData.subject,
+                    message: emailData.message,
+                    _replyto: emailData.reply_to
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Email sent successfully');
+                } else {
+                    console.log('Email sending failed, but form data saved locally');
+                }
+            })
+            .catch(error => {
+                console.log('Email service unavailable, form data saved locally', error);
+            });
+        }
+
+        // Scroll to element helper
+        function scrollToElement(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // FAQ Toggle Function
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                if (ans !== answer) {
+                    ans.style.display = 'none';
+                    ans.previousElementSibling.querySelector('.faq-icon').textContent = '+';
+                }
+            });
+            
+            // Toggle current FAQ
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                icon.textContent = '−';
+            } else {
+                answer.style.display = 'none';
+                icon.textContent = '+';
+            }
+        }
+
+        // File Upload Handler Function
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            const statusDiv = document.getElementById('fileUploadStatus');
+            const maxSizeMB = 5;
+            const maxSizeBytes = maxSizeMB * 1024 * 1024;
+            const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'];
+            
+            if (!file) {
+                statusDiv.innerHTML = '';
+                return;
+            }
+            
+            // Validate file size
+            if (file.size > maxSizeBytes) {
+                statusDiv.innerHTML = `<p style="color: var(--color-error); font-size: 14px; margin-top: 5px;">❌ File too large! Maximum size is ${maxSizeMB}MB. Your file is ${(file.size / 1024 / 1024).toFixed(2)}MB.</p>`;
+                event.target.value = '';
+                return;
+            }
+            
+            // Validate file type
+            if (!allowedTypes.includes(file.type)) {
+                statusDiv.innerHTML = `<p style="color: var(--color-error); font-size: 14px; margin-top: 5px;">❌ Invalid file type! Only PDF, DOC, DOCX, and TXT files are allowed.</p>`;
+                event.target.value = '';
+                return;
+            }
+            
+            // File is valid
+            statusDiv.innerHTML = `<p style="color: var(--color-success); font-size: 14px; margin-top: 5px;">✓ File ready: ${file.name} (${(file.size / 1024).toFixed(2)}KB)</p>`;
+            
+            // Store file information in window object for later use
+            window.selectedCVFile = {
+                name: file.name,
+                size: file.size,
+                type: file.type,
+                uploadDate: new Date().toISOString()
+            };
+        }
+
+        // Storage Functions
+        function saveDataToStorage() {
+            localStorage.setItem(CONFIG.storageKey, JSON.stringify(formData));
+        }
+
+        function loadDataFromStorage() {
+            const stored = localStorage.getItem(CONFIG.storageKey);
+            if (stored) {
+                formData = JSON.parse(stored);
+            }
+        }
+
+        // Admin Dashboard Functions
+        function updateAdminStats() {
+            document.getElementById('totalCandidates').textContent = formData.candidates.length;
+            document.getElementById('totalEmployers').textContent = formData.employers.length;
+            document.getElementById('totalInquiries').textContent = formData.inquiries.length;
+            
+            const pending = formData.candidates.filter(c => c.status === 'Pending').length +
+                          formData.employers.filter(e => e.status === 'Pending').length +
+                          formData.inquiries.filter(i => i.status === 'Pending').length;
+            document.getElementById('pendingReview').textContent = pending;
+        }
+
+        let currentAdminTab = 'candidates';
+
+        function switchAdminTab(tab) {
+            currentAdminTab = tab;
+            document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update filter visibility
+            const professionFilter = document.getElementById('professionFilter');
+            professionFilter.style.display = tab === 'candidates' ? 'block' : 'none';
+            
+            renderAdminTable();
+        }
+
+        function renderAdminTable() {
+            const tbody = document.getElementById('adminTableBody');
+            let data = [];
+
+            if (currentAdminTab === 'candidates') {
+                data = formData.candidates;
+            } else if (currentAdminTab === 'employers') {
+                data = formData.employers;
+            } else {
+                data = formData.inquiries;
+            }
+
+            if (data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" style="text-align: center; padding: 40px; color: var(--color-text-light);">No records yet. Form submissions will appear here.</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = data.map(item => `
+                <tr>
+                    <td>${item.id}</td>
+                    <td>${item.fullName || item.companyName || ''}</td>
+                    <td>${item.email}</td>
+                    <td>${currentAdminTab === 'candidates' ? item.profession : currentAdminTab === 'employers' ? item.roleRequired : item.type}</td>
+                    <td>${item.currentEmployer || item.skills || item.message ? (item.currentEmployer || item.skills || item.message).substring(0, 30) + '...' : '-'}</td>
+                    <td><span class="status-badge status-${item.status.toLowerCase()}">${item.status}</span></td>
+                    <td>${new Date(item.date).toLocaleDateString()}</td>
+                    <td>
+                        <select onchange="updateStatus('${currentAdminTab}', '${item.id}', this.value)" style="padding: 6px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                            <option value="">Update...</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Reviewed">Reviewed</option>
+                            <option value="Shortlisted">Shortlisted</option>
+                        </select>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function updateStatus(tab, id, status) {
+            if (!status) return;
+            
+            let data = tab === 'candidates' ? formData.candidates : tab === 'employers' ? formData.employers : formData.inquiries;
+            const item = data.find(i => i.id === id);
+            if (item) {
+                item.status = status;
+                saveDataToStorage();
+                updateAdminStats();
+                renderAdminTable();
+                showToast('✓ Status updated successfully!', 'success');
+            }
+        }
+
+        function filterAdminData() {
+            const searchTerm = document.getElementById('searchFilter').value.toLowerCase();
+            const statusFilter = document.getElementById('statusFilter').value;
+            const professionFilter = document.getElementById('professionFilter').value;
+
+            let data = currentAdminTab === 'candidates' ? formData.candidates : currentAdminTab === 'employers' ? formData.employers : formData.inquiries;
+
+            data = data.filter(item => {
+                const matchesSearch = item.fullName?.toLowerCase().includes(searchTerm) || 
+                                    item.companyName?.toLowerCase().includes(searchTerm) ||
+                                    item.email.toLowerCase().includes(searchTerm);
+                const matchesStatus = !statusFilter || item.status === statusFilter;
+                const matchesProfession = !professionFilter || item.profession === professionFilter;
+                
+                return matchesSearch && matchesStatus && matchesProfession;
+            });
+
+            const tbody = document.getElementById('adminTableBody');
+            if (data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" style="text-align: center; padding: 40px; color: var(--color-text-light);">No matching records found.</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = data.map(item => `
+                <tr>
+                    <td>${item.id}</td>
+                    <td>${item.fullName || item.companyName || ''}</td>
+                    <td>${item.email}</td>
+                    <td>${item.profession || item.roleRequired || item.type}</td>
+                    <td>${(item.currentEmployer || item.skills || item.message || '-').substring(0, 30)}...</td>
+                    <td><span class="status-badge status-${item.status.toLowerCase()}">${item.status}</span></td>
+                    <td>${new Date(item.date).toLocaleDateString()}</td>
+                    <td>
+                        <select onchange="updateStatus('${currentAdminTab}', '${item.id}', this.value)" style="padding: 6px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                            <option value="">Update...</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Reviewed">Reviewed</option>
+                            <option value="Shortlisted">Shortlisted</option>
+                        </select>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function exportTableToCSV() {
+            let data = currentAdminTab === 'candidates' ? formData.candidates : currentAdminTab === 'employers' ? formData.employers : formData.inquiries;
+            
+            if (data.length === 0) {
+                showToast('No data to export', 'warning');
+                return;
+            }
+
+            const headers = currentAdminTab === 'candidates' 
+                ? ['ID', 'Full Name', 'Country', 'Email', 'WhatsApp', 'Profession', 'Experience', 'Availability', 'Status', 'Date']
+                : currentAdminTab === 'employers'
+                ? ['ID', 'Company', 'Contact', 'Email', 'Country', 'Role', 'Staff Count', 'Status', 'Date']
+                : ['ID', 'Name', 'Email', 'Type', 'Message', 'Status', 'Date'];
+
+            let csv = headers.join(',') + '\n';
+
+            data.forEach(item => {
+                const values = currentAdminTab === 'candidates'
+                    ? [item.id, item.fullName, item.country, item.email, item.whatsapp, item.profession, item.experience, item.availability, item.status, new Date(item.date).toLocaleDateString()]
+                    : currentAdminTab === 'employers'
+                    ? [item.id, item.companyName, item.contactPerson, item.email, item.country, item.roleRequired, item.staffCount, item.status, new Date(item.date).toLocaleDateString()]
+                    : [item.id, item.fullName, item.email, item.type, item.message, item.status, new Date(item.date).toLocaleDateString()];
+                
+                csv += values.map(v => `"${v}"`).join(',') + '\n';
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${currentAdminTab}_${new Date().toISOString().slice(0, 10)}.csv`;
+            a.click();
+            
+            showToast('✓ CSV exported successfully!', 'success');
+        }
+
+        // Toast Notification Function
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
